@@ -1,5 +1,5 @@
 import ContentContainer from '@/layouts/ContentContainer'
-import Card from '@/components/ui/card/Card'
+import ProjectCard from '@/components/ui/card/ProjectCard'
 
 import { PROJECT_BRIEF_LIST } from '@/data/project-brief-data'
 
@@ -8,7 +8,7 @@ const Home = () => {
     <ContentContainer>
       <ul className='grid grid-cols-1 lg:grid-cols-2 gap-6'>
         {PROJECT_BRIEF_LIST.map(project => (
-          <Card
+          <ProjectCard
             key={project.id}
             {...project}
           />
