@@ -1,6 +1,10 @@
 import KolProcessImg from '@/assets/images/kol/kol-process.svg'
 
 import PingoSitemapImg from '@/assets/images/pingo/pingo-sitemap.svg'
+import PingoUser1Img from '@/assets/images/pingo/user1.svg'
+import PingoUser2Img from '@/assets/images/pingo/user2.svg'
+import PingoUser3Img from '@/assets/images/pingo/user3.svg'
+import PingoUser4Img from '@/assets/images/pingo/user4.svg'
 
 import KaiProcessImg from '@/assets/images/kai/kai-process.svg'
 import KaiSitemapImg from '@/assets/images/kai/kai-sitemap.svg'
@@ -186,6 +190,75 @@ export const PROJECT_DATA = {
         }
       ]
     },
+    userResearch: {
+      title: '使用者研究 / User Research',
+      descriptions: [
+        {
+          id: 1,
+          label: '用戶評論',
+          content:
+            '根據二手資料如App評分、網路評論彙整使用者的使用反饋，總結出以下較常出現的痛點內容。'
+        }
+      ],
+      researches: [
+        {
+          id: 1,
+          title: '地圖介面易誤觸',
+          content:
+            '當收藏項目數量過多時，地圖介面上的標記顯示過於密集，導致畫面顯得雜亂無章，不僅瀏覽上有負擔也容易誤觸。',
+          userImage: PingoUser1Img
+        },
+        {
+          id: 2,
+          title: '搜尋結果大雜燴',
+          content:
+            '有時候只想找美食或景點，但搜尋結果會把美食與景點都混在其中，難以找到想要的內容。',
+          userImage: PingoUser2Img
+        },
+        {
+          id: 3,
+          title: '收藏分類單一',
+          content:
+            '目前產品的收藏頁面僅提供「美食」與「景點」兩種分類，分類方式過於單一，無法根據個人喜好分類。',
+          userImage: PingoUser3Img
+        },
+        {
+          id: 4,
+          title: '互動體驗不佳',
+          content:
+            '店家詳情頁中的資訊呈現方式不夠明確，部分資訊可以點擊進一步操作或查看，但部分則無法點擊。',
+          userImage: PingoUser4Img
+        }
+      ]
+    },
+    insights: {
+      title: '設計洞察 /  insights',
+      descriptions: [
+        {
+          id: 1,
+          label: '設計觀點',
+          content:
+            '使用者容易在搜尋＆查找過去已收藏的美食、景點情境時，感到困難，不難發現<span class="text-secondary-02">對使用者來說快速的找到該目標項目及資訊是很重要的。</span>'
+        }
+      ],
+      informations: [
+        {
+          id: 1,
+          title: '使用者',
+          content: '一位打開Pingo想搜尋過去已收藏項目的使用者。'
+        },
+        {
+          id: 2,
+          title: '使用者的需求',
+          content: '需要在搜尋及查找時能更快速的找到美食、景點。'
+        },
+        {
+          id: 3,
+          title: '我的洞察',
+          content: '因為對他來說能快速的找到該資訊很重要。'
+        }
+      ]
+    },
     sitemap: {
       title: '功能架構 / Information Architecture',
       description: null,
@@ -220,10 +293,10 @@ export const PROJECT_DATA = {
       ],
       picture: {
         src: PingoSitemapImg,
-        alt: '新睿網站架構',
+        alt: 'Pingo 美食搜集神器架構',
         placeholder: PingoSitemapImg,
-        width: 549,
-        height: 658
+        width: 496,
+        height: 594
       }
     }
   },
@@ -323,8 +396,8 @@ export const PROJECT_DATA = {
         src: KaiSitemapImg,
         alt: '凱奧網站架構',
         placeholder: KaiSitemapImg,
-        width: 844,
-        height: 1219
+        width: 675,
+        height: 974
       }
     },
     demoVideo: {
@@ -467,8 +540,8 @@ export const PROJECT_DATA = {
         src: MandalaSitemapImg,
         alt: '新睿網站架構',
         placeholder: MandalaSitemapImg,
-        width: 542,
-        height: 439
+        width: 456,
+        height: 369
       }
     },
     demoVideo: {
