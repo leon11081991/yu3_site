@@ -29,6 +29,24 @@
 }
 
 @layer components {
+  .section-container {
+    @apply py-[104px];
+
+    &.with-divider {
+      @apply border-b-[1px] border-gray-03;
+    }
+  }
+
+  .section-container-inner {
+    @apply flex flex-col gap-16;
+  }
+}
+
+@layer components {
+  .section-top-cols-grid {
+    @apply grid gap-6 grid-cols-1 md:grid-cols-[3fr_7fr];
+  }
+
   .two-cols-container {
     @apply grid gap-6 grid-cols-1 md:grid-cols-[3fr_7fr];
   }

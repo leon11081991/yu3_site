@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import DOMPurify from 'dompurify'
 
-const ItemWithTitle = ({ label, content }) => {
+const TextWithTitle = ({ label, content }) => {
   return (
     <li className='flex flex-col gap-2'>
       {label && <h5 className='heading-3 text-gray-03'>{label}</h5>}
@@ -13,9 +13,9 @@ const ItemWithTitle = ({ label, content }) => {
   )
 }
 
-ItemWithTitle.propTypes = {
+TextWithTitle.propTypes = {
   label: PropTypes.string,
   content: PropTypes.string.isRequired
 }
 
-export default ItemWithTitle
+export default TextWithTitle

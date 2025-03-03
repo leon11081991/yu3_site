@@ -1,9 +1,19 @@
 import PropTypes from 'prop-types'
+// import BaseSectionGrid from '@/components/templates/BaseSectionGrid'
 import ContentContainer from '@/layouts/ContentContainer'
 import BarChartItem from '@/components/BarChartItem'
-import ItemWithTitle from '@/components/ItemWithTitle'
+import TextWithTitle from '@/components/ui/text/TextWithTitle'
+
+// const BackgroundResearchTop = ({ title }) => {
+//   return (
+//     <>
+//       <h3 className='heading-2'>{title}</h3>
+//     </>
+//   )
+// }
 
 const PingoBgResearch = ({ title, dataSources, information }) => {
+  // return <BaseSectionGrid />
   return (
     <ContentContainer>
       <section className='section-content border-b-[1px] border-gray-03'>
@@ -20,7 +30,6 @@ const PingoBgResearch = ({ title, dataSources, information }) => {
                     <p className='text-h3'>{title}</p>
                     <span className='text-p2 text-gray-04'>資料來源：{source}</span>
                   </li>
-
                   <div className='flex flex-col gap-6'>
                     {chartSources.map(item => (
                       <BarChartItem
@@ -32,10 +41,9 @@ const PingoBgResearch = ({ title, dataSources, information }) => {
                 </div>
               ))}
             </div>
-
             <ul className='flex flex-col gap-8'>
               {information.map(item => (
-                <ItemWithTitle
+                <TextWithTitle
                   key={item.label}
                   label={item.label}
                   content={item.content}
