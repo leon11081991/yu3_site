@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types'
-
 import ProjectInfo from '@/components/ProjectInfo'
 import ProjectAbout from '@/components/ProjectAbout'
 import ProjectSitemap from '@/components/ProjectSitemap'
 import PingoBgResearch from '@/components/pingo/PingoBgResearch'
+import PingoUserResearch from '@/components/pingo/PingoUserResearch'
+import PingoInsights from '@/components/pingo/PingoInsights'
 
 const PingoProjectPage = props => {
   return (
@@ -11,8 +12,9 @@ const PingoProjectPage = props => {
       <ProjectInfo {...props.info} />
       <ProjectAbout {...props.about} />
       <PingoBgResearch {...props.backgroundResearch} />
-      {/* 使用者研究 / User Research */}
+      <PingoUserResearch {...props.userResearch} />
       {/* 設計洞察 /  insights */}
+      <PingoInsights {...props.insights} />
       {/* 痛點分析＆解決方案 / Painpoint & Solution */}
       <ProjectSitemap {...props.sitemap} />
       {/* 流程優化 / Flow Chart */}
@@ -25,6 +27,8 @@ PingoProjectPage.propTypes = {
   info: PropTypes.object.isRequired,
   about: PropTypes.object.isRequired,
   backgroundResearch: PropTypes.object.isRequired,
+  userResearch: PropTypes.object.isRequired,
+  insights: PropTypes.object.isRequired,
   sitemap: PropTypes.object.isRequired
 }
 
