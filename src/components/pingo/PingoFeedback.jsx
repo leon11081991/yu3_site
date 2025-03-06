@@ -17,13 +17,13 @@ DescriptionBlock.propTypes = {
   items: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.string.isRequired,
-      label: PropTypes.string.isRequired,
+      label: PropTypes.string,
       content: PropTypes.string.isRequired
     })
   ).isRequired
 }
 
-const InsightsHeader = ({ title, descriptions }) => {
+const FeedbackHeader = ({ title, descriptions }) => {
   return (
     <>
       <h3 className='heading-2'>{title}</h3>
@@ -32,14 +32,14 @@ const InsightsHeader = ({ title, descriptions }) => {
   )
 }
 
-InsightsHeader.propTypes = {
+FeedbackHeader.propTypes = {
   title: PropTypes.string.isRequired,
-  descriptions: PropTypes.array.isRequired
+  descriptions: PropTypes.array
 }
 
-const InsightsMainContent = ({ images }) => {
+const FeedbackMainContent = ({ images }) => {
   return (
-    <div className='w-[88.5%] mx-auto'>
+    <div className='w-[77%] mx-auto'>
       {images.map(img => (
         <BlurLazyImage
           key={img.id}
@@ -54,28 +54,48 @@ const InsightsMainContent = ({ images }) => {
   )
 }
 
-InsightsMainContent.propTypes = {
-  images: PropTypes.array.isRequired
+FeedbackMainContent.propTypes = {
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      src: PropTypes.string.isRequired,
+      alt: PropTypes.string.isRequired,
+      placeholder: PropTypes.string,
+      width: PropTypes.number.isRequired,
+      height: PropTypes.number.isRequired
+    })
+  ).isRequired
 }
 
-const PingoInsights = ({ title, descriptions, images }) => {
+const PingoFeedback = ({ title, descriptions, images }) => {
   return (
     <BaseSectionGrid
       topContent={
-        <InsightsHeader
+        <FeedbackHeader
           title={title}
           descriptions={descriptions}
         />
       }
-      mainContent={<InsightsMainContent images={images} />}
+      mainContent={<FeedbackMainContent images={images} />}
+      hasDivider={false}
+      noPb={true}
     />
   )
 }
 
-PingoInsights.propTypes = {
+PingoFeedback.propTypes = {
   title: PropTypes.string.isRequired,
-  descriptions: PropTypes.array.isRequired,
-  images: PropTypes.array.isRequired
+  descriptions: PropTypes.array,
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      src: PropTypes.string.isRequired,
+      alt: PropTypes.string.isRequired,
+      placeholder: PropTypes.string,
+      width: PropTypes.number.isRequired,
+      height: PropTypes.number.isRequired
+    })
+  ).isRequired
 }
 
-export default PingoInsights
+export default PingoFeedback

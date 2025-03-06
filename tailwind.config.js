@@ -41,7 +41,9 @@ export default {
         h1: '1px',
         h2: '0.5px',
         h3: '0.5px',
-        h4: '0.5px'
+        h4: '0.5px',
+        p1: '0.5px',
+        p2: '0.5px'
       }
     }
   },

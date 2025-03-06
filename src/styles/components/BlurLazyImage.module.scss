@@ -1,5 +1,5 @@
 .blur-load {
-  @apply relative bg-cover bg-center blur-md;
+  @apply relative bg-cover bg-center blur-md w-full h-full;
 
   img {
     @apply w-full block object-cover object-center opacity-0;

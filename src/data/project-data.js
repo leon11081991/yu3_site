@@ -1,10 +1,23 @@
 import KolProcessImg from '@/assets/images/kol/kol-process.svg'
 
-import PingoSitemapImg from '@/assets/images/pingo/pingo-sitemap.svg'
-import PingoUser1Img from '@/assets/images/pingo/user1.svg'
-import PingoUser2Img from '@/assets/images/pingo/user2.svg'
-import PingoUser3Img from '@/assets/images/pingo/user3.svg'
-import PingoUser4Img from '@/assets/images/pingo/user4.svg'
+import PingoSitemapImg from '@/assets/images/pingo/pingo-sitemap.avif'
+import PingoUser1Img from '@/assets/images/pingo/pingo-user1.avif'
+import PingoUser2Img from '@/assets/images/pingo/pingo-user2.avif'
+import PingoUser3Img from '@/assets/images/pingo/pingo-user3.avif'
+import PingoUser4Img from '@/assets/images/pingo/pingo-user4.avif'
+import PingoInsightsImg from '@/assets/images/pingo/pingo-insights.avif'
+import PingoFlowIndicatorImg from '@/assets/images/pingo/pingo-flow-indicator.avif'
+import PingoFlowSearchImg from '@/assets/images/pingo/pingo-flow-search.avif'
+import PingoFlowCollectionImg from '@/assets/images/pingo/pingo-flow-collection.avif'
+import PingoUsabilityImg from '@/assets/images/pingo/pingo-usability.avif'
+import PingoFeedbackImg from '@/assets/images/pingo/pingo-feedback.avif'
+import PingoGuidelineImg from '@/assets/images/pingo/pingo-guideline.avif'
+import PingoUI1Img from '@/assets/images/pingo/pingo-ui-1.avif'
+import PingoUI2Img from '@/assets/images/pingo/pingo-ui-2.avif'
+import PingoUI3Img from '@/assets/images/pingo/pingo-ui-3.avif'
+import PingoUI4Img from '@/assets/images/pingo/pingo-ui-4.avif'
+import PingoUI5Img from '@/assets/images/pingo/pingo-ui-5.avif'
+import PingoUI6Img from '@/assets/images/pingo/pingo-ui-6.avif'
 
 import KaiProcessImg from '@/assets/images/kai/kai-process.svg'
 import KaiSitemapImg from '@/assets/images/kai/kai-sitemap.svg'
@@ -257,6 +270,65 @@ export const PROJECT_DATA = {
           title: '我的洞察',
           content: '因為對他來說能快速的找到該資訊很重要。'
         }
+      ],
+      images: [
+        {
+          id: 1,
+          src: PingoInsightsImg,
+          alt: 'Pingo 美食搜集神器架構',
+          placeholder: PingoInsightsImg,
+          width: 994,
+          height: 330
+        }
+      ]
+    },
+    painPoints: {
+      title: '痛點分析＆解決方案 / Painpoint & Solution',
+      informations: [
+        {
+          id: 'pain-info-1',
+          pain: {
+            heading: '瀏覽體驗不佳',
+            content: '當收藏數量龐大時，介面呈現方式不夠簡潔，降低操作精准度。'
+          },
+          solution: {
+            heading: '地圖介面優化',
+            content: '弱化次要資訊，突出重要的顯示內容，同時精簡顯示數量。'
+          }
+        },
+        {
+          id: 'pain-info-2',
+          pain: {
+            heading: '搜尋功能不完善',
+            content: '搜尋不精準，導致需要花費大量時間檢視不相關的結果。'
+          },
+          solution: {
+            heading: '進階搜尋功能',
+            content: '區分美食、景點搜尋，增加地區篩選，方便針對特定範圍搜索。'
+          }
+        },
+        {
+          id: 'pain-info-3',
+          pain: {
+            heading: '收藏分類單ㄧ',
+            content: '收藏分類固定，使用者無法根據自己的習慣和需求管理內容。'
+          },
+          solution: {
+            heading: '增加個人化分類',
+            content: '用戶可根據個人偏好創建專屬的個人分類，更容易找到項目。'
+          }
+        },
+        {
+          id: 'pain-info-4',
+          pain: {
+            heading: '互動方式不直覺',
+            content: '店家詳情頁的資訊有些可點擊有些不能，容易使用戶覺得困惑。'
+          },
+          solution: {
+            heading: '強化資訊層級',
+            content: '針對重要操作（如導航、社群連結等）設計明確的視覺提示。'
+          }
+        }
       ]
     },
     sitemap: {
@@ -298,6 +370,235 @@ export const PROJECT_DATA = {
         width: 496,
         height: 594
       }
+    },
+    flowChart: {
+      title: '流程優化 / Flow Chart',
+      descriptions: [
+        {
+          id: 'flowChart-des-1',
+          label: '搜尋流程優化',
+          content:
+            '在用戶研究的過程中，我們發現<span class="text-secondary-02">「快速查找過去已收藏的項目」</span>是用戶的核心需求之一。因此將設計重點放在優化該需求的流程與體驗上，確保用戶能以直觀且高效的方式搜尋和管理其收藏內容，從而提升整體使用的便利性與滿意度。'
+        }
+      ],
+      indicator: {
+        src: PingoFlowIndicatorImg,
+        alt: 'Pingo 流程圖圖示',
+        placeholder: PingoFlowIndicatorImg,
+        width: 482,
+        height: 171
+      },
+      information: [
+        {
+          id: 'flowChart-info-1',
+          heading: '搜尋、篩選流程',
+          images: [
+            {
+              id: 'flowChart-img-1',
+              src: PingoFlowSearchImg,
+              alt: 'Pingo 美食搜集神器易用性測試圖',
+              placeholder: PingoFlowSearchImg,
+              width: 1000,
+              height: 329
+            }
+          ]
+        },
+        {
+          id: 'flowChart-info-2',
+          heading: '新增建立收藏分類流程',
+          images: [
+            {
+              id: 'flowChart-img-2',
+              src: PingoFlowCollectionImg,
+              alt: 'Pingo 美食搜集神器易用性測試圖',
+              placeholder: PingoFlowCollectionImg,
+              width: 1000,
+              height: 209
+            }
+          ]
+        }
+      ]
+    },
+    usability: {
+      title: '易用性測試 /  Usability Test',
+      descriptions: [
+        {
+          id: 'usability-des-1',
+          label: '原型測試',
+          content:
+            '為了確保設計具備良好的易用性，讓使用者能夠直覺操作並清楚獲取資訊。我製作了可點擊的高保真原型，以進行易用性測試。並邀請了5位友人參與測試，<span class="text-secondary-02">透過實際操作檢驗介面是否易於理解、功能是否直觀等，作為優化依據。</span>'
+        }
+      ],
+      images: [
+        {
+          id: 'usability-img-1',
+          src: PingoUsabilityImg,
+          alt: 'Pingo 美食搜集神器易用性測試圖',
+          placeholder: PingoUsabilityImg,
+          width: 994,
+          height: 330
+        }
+      ]
+    },
+    feedback: {
+      title: '使用反饋 /  Feedback',
+      descriptions: [
+        {
+          id: 'feedback-des-1',
+          label: '原型測試',
+          content:
+            '從易用性測試的結果來看，有3位受測者反饋了一樣的問題，<span class="text-secondary-02">發現在介面呈現上忽略了細節，導致影響整體流暢度與體驗</span>，因此針對以下反饋進行了二次優化。'
+        }
+      ],
+      images: [
+        {
+          id: 'feedback-img-1',
+          src: PingoFeedbackImg,
+          alt: 'Pingo 美食搜集神器易用性測試圖',
+          placeholder: PingoFeedbackImg,
+          width: 864,
+          height: 414
+        }
+      ]
+    },
+    guideline: {
+      title: '設計規範 / Design Guideline',
+      images: [
+        {
+          id: 'guideline-img-1',
+          src: PingoGuidelineImg,
+          alt: 'Pingo 美食搜集神器易用性測試圖',
+          placeholder: PingoGuidelineImg,
+          width: 980,
+          height: 429
+        }
+      ]
+    },
+    uiDesign: {
+      title: '成果展示 / UI Design',
+      informations: [
+        {
+          id: 'uiDesign-info-1',
+          heading: '<span class="text-secondary-02">01</span> 地圖介面優化',
+          subheading: '減少視覺負擔＆凸顯重要資訊',
+          hasBgColor: true,
+          images: [
+            {
+              id: 'uiDesign-img-1',
+              src: PingoUI1Img,
+              alt: 'Pingo 地圖介面優化',
+              placeholder: PingoUI1Img,
+              width: 1122,
+              height: 599
+            }
+          ]
+        },
+        {
+          id: 'uiDesign-info-2',
+          heading: '<span class="text-secondary-02">02</span> 進階搜尋功能',
+          subheading: '增加景點搜尋及地區篩選',
+          hasBgColor: false,
+          images: [
+            {
+              id: 'uiDesign-img-2',
+              src: PingoUI2Img,
+              alt: 'Pingo 地圖介面優化',
+              placeholder: PingoUI2Img,
+              width: 1122,
+              height: 736
+            }
+          ]
+        },
+        {
+          id: 'uiDesign-info-3',
+          heading: '<span class="text-secondary-02">03</span> 增加個人化分類',
+          subheading: '依據個人偏好、習慣創建專屬分類',
+          hasBgColor: true,
+          images: [
+            {
+              id: 'uiDesign-img-3',
+              src: PingoUI3Img,
+              alt: 'Pingo 地圖介面優化',
+              placeholder: PingoUI3Img,
+              width: 1070,
+              height: 585
+            }
+          ]
+        },
+        {
+          id: 'uiDesign-info-4',
+          heading: null,
+          subheading: '分類內頁',
+          hasBgColor: true,
+          images: [
+            {
+              id: 'uiDesign-img-4',
+              src: PingoUI4Img,
+              alt: 'Pingo 地圖介面優化',
+              placeholder: PingoUI4Img,
+              width: 600,
+              height: 461
+            }
+          ]
+        },
+        {
+          id: 'uiDesign-info-5',
+          heading: null,
+          subheading: '建立收藏分類流程',
+          hasBgColor: true,
+          images: [
+            {
+              id: 'uiDesign-img-5',
+              src: PingoUI5Img,
+              alt: 'Pingo 地圖介面優化',
+              placeholder: PingoUI5Img,
+              width: 968,
+              height: 555
+            }
+          ]
+        },
+        {
+          id: 'uiDesign-info-6',
+          heading: '<span class="text-secondary-02">04</span> 強化資訊層級',
+          subheading: '明確的設計提示引導操作',
+          hasBgColor: false,
+          images: [
+            {
+              id: 'uiDesign-img-6',
+              src: PingoUI6Img,
+              alt: 'Pingo 地圖介面優化',
+              placeholder: PingoUI6Img,
+              width: 1122,
+              height: 599
+            }
+          ]
+        }
+      ]
+    },
+    reflection: {
+      title: '學習&反思 / Reflection',
+      descriptions: [
+        {
+          id: 'reflection-des-1',
+          label: '設計動機',
+          content:
+            '之所以挑選Pingo做Redesign，<span class="text-secondary-02">不外乎對於美食景點的熱愛，加上我本身也是這個App的用戶。</span>起初在做用戶研究時，可以發現用戶數滿多的，很容易搜尋到用戶分享使用上的優缺點，也發現產品有許多可優化的空間！便有了優化Pingo的動機，雖然無法得知產品本身的策略及商業邏輯，沒有辦法做更深層的拆解，因此決定優化使用上的流程，以提升使用流暢度，增加用戶黏著度為目標，做發想與設計。'
+        }
+      ],
+      informations: [
+        {
+          id: 'reflection-info-1',
+          content: '透過易用性測試，覺察設計盲點並優化。'
+        },
+        {
+          id: 'reflection-info-2',
+          content: '即使缺乏商業背景，優化的空間始終存在。'
+        },
+        {
+          id: 'reflection-info-3',
+          content: '持續驗證設計並優化更好的使用體驗。'
+        }
+      ]
     }
   },
   kai: {

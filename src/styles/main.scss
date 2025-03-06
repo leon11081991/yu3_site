@@ -31,10 +31,10 @@
 @layer components {
   .section-container {
     @apply py-[104px];
+  }
 
-    &.with-divider {
-      @apply border-b-[1px] border-gray-03;
-    }
+  .with-divider {
+    @apply border-b-[1px] border-gray-03;
   }
 
   .section-container-inner {
