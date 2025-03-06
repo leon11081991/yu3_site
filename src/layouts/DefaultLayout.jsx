@@ -1,14 +1,15 @@
 import { Outlet } from 'react-router-dom'
-import ScrollToTop from '@/components/global/ScrollToTop'
 import Header from '@/components/layout/Header'
 import Footer from '@/components/layout/Footer'
+import useScrollTo from '@/hooks/useScrollTo'
 
 const APP_NAME = 'Yu.3_'
 
 const DefaultLayout = () => {
+  useScrollTo()
+
   return (
     <>
-      <ScrollToTop />
       <Header appName={APP_NAME} />
       <Outlet />
       <Footer />
