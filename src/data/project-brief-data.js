@@ -1,14 +1,3 @@
-import WacaImg from '@assets/images/waca/waca.webp'
-import WacaImgSmall from '@assets/images/waca/waca-small.avif'
-import PingoImg from '@assets/images/pingo/pingo.webp'
-import PingoImgSmall from '@assets/images/pingo/pingo-small.avif'
-import KolImg from '@assets/images/kol/kol.webp'
-import KolImgSmall from '@assets/images/kol/kol-small.avif'
-import KaiCoverImg from '@assets/images/kai/kai.webp'
-import KaiCoverImgSmall from '@assets/images/kai/kai-small.avif'
-import MandalaImg from '@assets/images/mandala/mandala.webp'
-import MandalaImgSmall from '@assets/images/mandala/mandala-small.avif'
-
 export const PROJECT_BRIEF_LIST = [
   {
     id: 1,
@@ -16,9 +5,9 @@ export const PROJECT_BRIEF_LIST = [
     title: 'WACA - 設計規範',
     category: 'UI Design B2B  Design System',
     cover: {
-      src: WacaImg,
+      src: '/images/waca/waca.webp',
       alt: 'WACA - 設計規範',
-      placeholderImg: WacaImgSmall
+      placeholderImg: '/images/waca/waca-small.avif'
     }
   },
   {
@@ -27,9 +16,9 @@ export const PROJECT_BRIEF_LIST = [
     title: 'KOL Master 網紅媒合平台',
     category: 'UI/UX Design B2B Product Design ',
     cover: {
-      src: KolImg,
+      src: '/images/kol/kol.webp',
       alt: 'KOL Master 網紅媒合平台',
-      placeholderImg: KolImgSmall
+      placeholderImg: '/images/kol/kol-small.avif'
     }
   },
   {
@@ -38,9 +27,9 @@ export const PROJECT_BRIEF_LIST = [
     title: 'Pingo 美食搜集神器',
     category: 'APP Redesign',
     cover: {
-      src: PingoImg,
+      src: '/images/pingo/pingo.webp',
       alt: 'Pingo 美食搜集神器',
-      placeholderImg: PingoImgSmall
+      placeholderImg: '/images/pingo/pingo-small.avif'
     }
   },
   {
@@ -49,9 +38,9 @@ export const PROJECT_BRIEF_LIST = [
     title: 'KAI’S Gallery 凱奧畫廊',
     category: 'Online Store Web Design',
     cover: {
-      src: KaiCoverImg,
+      src: '/images/kai/kai.webp',
       alt: 'KAI’S Gallery 凱奧畫廊',
-      placeholderImg: KaiCoverImgSmall
+      placeholderImg: '/images/kai/kai-small.avif'
     }
   },
   {
@@ -60,9 +49,9 @@ export const PROJECT_BRIEF_LIST = [
     title: 'Mandala 新睿生醫',
     category: 'Branding Web Design ',
     cover: {
-      src: MandalaImg,
+      src: '/images/mandala/mandala.webp',
       alt: 'Mandala 新睿生醫',
-      placeholderImg: MandalaImgSmall
+      placeholderImg: '/images/mandala/mandala-small.avif'
     }
   }
 ]

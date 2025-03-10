@@ -1,31 +1,27 @@
-import KolBannerImg from '@assets/images/kol/kol.webp'
-import KolBannerImgSmall from '@assets/images/kol/kol-small.avif'
-import PingoBannerImg from '@assets/images/pingo/pingo.webp'
-import PingoBannerImgSmall from '@assets/images/pingo/pingo-small.avif'
-import KaiBannerImg from '@assets/images/kai/kai.webp'
-import KaiBannerImgSmall from '@assets/images/kai/kai-small.avif'
-import MandalaBannerImg from '@assets/images/mandala/mandala.webp'
-import MandalaBannerImgSmall from '@assets/images/mandala/mandala-small.avif'
-
 export const BANNER_DATA = {
+  waca: {
+    src: '/images/waca/waca.webp',
+    alt: 'WACA - 設計規範專案Banner',
+    placeholder: '/images/waca/waca-small.avif'
+  },
   kol: {
-    src: KolBannerImg,
+    src: '/images/kol/kol.webp',
     alt: 'KOL Master 網紅媒合平台專案Banner',
-    placeholder: KolBannerImgSmall
+    placeholder: '/images/kol/kol-small.avif'
   },
   pingo: {
-    src: PingoBannerImg,
+    src: '/images/pingo/pingo.webp',
     alt: 'Pingo 美食搜集神器專案Banner',
-    placeholder: PingoBannerImgSmall
+    placeholder: '/images/pingo/pingo-small.avif'
   },
   kai: {
-    src: KaiBannerImg,
+    src: '/images/kai/kai.webp',
     alt: '凱奧畫廊專案Banner',
-    placeholder: KaiBannerImgSmall
+    placeholder: '/images/kai/kai-small.avif'
   },
   mandala: {
-    src: MandalaBannerImg,
+    src: '/images/mandala/mandala.webp',
     alt: '新睿生醫專案Banner',
-    placeholder: MandalaBannerImgSmall
+    placeholder: '/images/mandala/mandala-small.avif'
   }
 }

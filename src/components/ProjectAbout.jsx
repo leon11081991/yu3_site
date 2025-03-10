@@ -1,43 +1,59 @@
 import PropTypes from 'prop-types'
-import ContentContainer from '@/layouts/ContentContainer'
+import BaseSectionGrid from '@/components/templates/BaseSectionGrid'
 import TextWithTitle from '@/components/ui/text/TextWithTitle'
 
-const ProjectAboutContent = ({ title, information }) => (
-  <section className='section-content two-cols-container border-b-[1px] border-gray-03'>
-    <h3 className='heading-2'>{title}</h3>
-    <ul className='flex flex-col gap-16'>
-      {information.map(item => (
+const DescriptionBlock = ({ infos }) => {
+  return (
+    <div className='flex flex-col gap-8'>
+      {infos.map(item => (
         <TextWithTitle
           key={item.label}
           label={item.label}
           content={item.content}
         />
       ))}
-    </ul>
-  </section>
-)
-
-const ProjectAbout = ({ title, information }) => (
-  <ContentContainer>
-    <ProjectAboutContent
-      title={title}
-      information={information}
-    />
-  </ContentContainer>
-)
-
-const projectAboutPropTypes = {
-  title: PropTypes.string.isRequired,
-  information: PropTypes.arrayOf(
-    PropTypes.shape({
-      label: PropTypes.string.isRequired,
-      content: PropTypes.string.isRequired
-    })
-  ).isRequired
+    </div>
+  )
 }
-const projectAboutContentPropTypes = projectAboutPropTypes
 
-ProjectAbout.propTypes = projectAboutPropTypes
-ProjectAboutContent.propTypes = projectAboutContentPropTypes
+DescriptionBlock.propTypes = {
+  infos: PropTypes.array.isRequired
+}
+
+const AboutHeader = ({ title, infos }) => {
+  return (
+    <>
+      <h3 className='heading-2'>{title}</h3>
+      <DescriptionBlock infos={infos} />
+    </>
+  )
+}
+
+AboutHeader.propTypes = {
+  title: PropTypes.string.isRequired,
+  infos: PropTypes.array.isRequired
+}
+
+const ProjectAbout = ({ title, information, ...props }) => {
+  return (
+    <BaseSectionGrid
+      topContent={
+        <AboutHeader
+          title={title}
+          infos={information}
+        />
+      }
+      hasDivider={props.hasDivider}
+      noPb={props.noPb}
+    />
+  )
+}
+
+ProjectAbout.propTypes = {
+  title: PropTypes.string.isRequired,
+  information: PropTypes.array.isRequired,
+  hasDivider: PropTypes.bool,
+  noPb: PropTypes.bool
+}
 
 export default ProjectAbout
