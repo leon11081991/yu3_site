@@ -1,38 +1,3 @@
-import KolProcessImg from '@/assets/images/kol/kol-process.svg'
-
-import PingoSitemapImg from '@/assets/images/pingo/pingo-sitemap.avif'
-import PingoUser1Img from '@/assets/images/pingo/pingo-user1.avif'
-import PingoUser2Img from '@/assets/images/pingo/pingo-user2.avif'
-import PingoUser3Img from '@/assets/images/pingo/pingo-user3.avif'
-import PingoUser4Img from '@/assets/images/pingo/pingo-user4.avif'
-import PingoInsightsImg from '@/assets/images/pingo/pingo-insights.avif'
-import PingoFlowIndicatorImg from '@/assets/images/pingo/pingo-flow-indicator.avif'
-import PingoFlowSearchImg from '@/assets/images/pingo/pingo-flow-search.avif'
-import PingoFlowCollectionImg from '@/assets/images/pingo/pingo-flow-collection.avif'
-import PingoUsabilityImg from '@/assets/images/pingo/pingo-usability.avif'
-import PingoFeedbackImg from '@/assets/images/pingo/pingo-feedback.avif'
-import PingoGuidelineImg from '@/assets/images/pingo/pingo-guideline.avif'
-import PingoUI1Img from '@/assets/images/pingo/pingo-ui-1.avif'
-import PingoUI2Img from '@/assets/images/pingo/pingo-ui-2.avif'
-import PingoUI3Img from '@/assets/images/pingo/pingo-ui-3.avif'
-import PingoUI4Img from '@/assets/images/pingo/pingo-ui-4.avif'
-import PingoUI5Img from '@/assets/images/pingo/pingo-ui-5.avif'
-import PingoUI6Img from '@/assets/images/pingo/pingo-ui-6.avif'
-
-import KaiProcessImg from '@/assets/images/kai/kai-process.svg'
-import KaiSitemapImg from '@/assets/images/kai/kai-sitemap.svg'
-import KaiDemoVideo from '@/assets/videos/kai-demo.mp4'
-import KaiDemo1Img from '@/assets/images/kai/kai-demo1.svg'
-import KaiDemo2Img from '@/assets/images/kai/kai-demo2.svg'
-import KaiDemo3Img from '@/assets/images/kai/kai-demo3.svg'
-
-import MandalaSitemapImg from '@assets/images/mandala/mandala-sitemap.svg'
-import MandalaDemoVideo from '@assets/videos/mandala-demo.mp4'
-import MandalaDemo1Img from '@assets/images/mandala/mandala-demo-1.jpg'
-import MandalaDemo2Img from '@assets/images/mandala/mandala-demo-2.png'
-import MandalaDemo3Img from '@assets/images/mandala/mandala-demo-3.png'
-import MandalaDemo4Img from '@assets/images/mandala/mandala-demo-4.png'
-
 export const PROJECT_DATA = {
   kol: {
     info: {
@@ -105,9 +70,9 @@ export const PROJECT_DATA = {
     process: {
       title: '設計流程 / Design Process',
       image: {
-        src: KolProcessImg,
+        src: '/images/kol/kol-process.svg',
         alt: 'KOL Master 專案流程',
-        placeholder: KolProcessImg,
+        placeholder: '/images/kol/kol-process.svg',
         width: 1122,
         height: 440
       }
@@ -156,9 +121,9 @@ export const PROJECT_DATA = {
         }
       ],
       picture: {
-        src: PingoSitemapImg,
+        src: '/images/pingo/pingo-sitemap.avif',
         alt: 'Pingo 美食搜集神器架構',
-        placeholder: PingoSitemapImg,
+        placeholder: '/images/pingo/pingo-sitemap.avif',
         width: 496,
         height: 594
       }
@@ -292,28 +257,28 @@ export const PROJECT_DATA = {
           title: '地圖介面易誤觸',
           content:
             '當收藏項目數量過多時，地圖介面上的標記顯示過於密集，導致畫面顯得雜亂無章，不僅瀏覽上有負擔也容易誤觸。',
-          userImage: PingoUser1Img
+          userImage: '/images/pingo/pingo-user1.avif'
         },
         {
           id: 2,
           title: '搜尋結果大雜燴',
           content:
             '有時候只想找美食或景點，但搜尋結果會把美食與景點都混在其中，難以找到想要的內容。',
-          userImage: PingoUser2Img
+          userImage: '/images/pingo/pingo-user2.avif'
         },
         {
           id: 3,
           title: '收藏分類單一',
           content:
             '目前產品的收藏頁面僅提供「美食」與「景點」兩種分類，分類方式過於單一，無法根據個人喜好分類。',
-          userImage: PingoUser3Img
+          userImage: '/images/pingo/pingo-user3.avif'
         },
         {
           id: 4,
           title: '互動體驗不佳',
           content:
             '店家詳情頁中的資訊呈現方式不夠明確，部分資訊可以點擊進一步操作或查看，但部分則無法點擊。',
-          userImage: PingoUser4Img
+          userImage: '/images/pingo/pingo-user4.avif'
         }
       ]
     },
@@ -347,9 +312,9 @@ export const PROJECT_DATA = {
       images: [
         {
           id: 1,
-          src: PingoInsightsImg,
+          src: '/images/pingo/pingo-insights.avif',
           alt: 'Pingo 美食搜集神器架構',
-          placeholder: PingoInsightsImg,
+          placeholder: '/images/pingo/pingo-insights.avif',
           width: 994,
           height: 330
         }
@@ -437,9 +402,9 @@ export const PROJECT_DATA = {
         }
       ],
       picture: {
-        src: PingoSitemapImg,
+        src: '/images/pingo/pingo-sitemap.avif',
         alt: 'Pingo 美食搜集神器架構',
-        placeholder: PingoSitemapImg,
+        placeholder: '/images/pingo/pingo-sitemap.avif',
         width: 496,
         height: 594
       }
@@ -455,9 +420,9 @@ export const PROJECT_DATA = {
         }
       ],
       indicator: {
-        src: PingoFlowIndicatorImg,
+        src: '/images/pingo/pingo-flow-indicator.avif',
         alt: 'Pingo 流程圖圖示',
-        placeholder: PingoFlowIndicatorImg,
+        placeholder: '/images/pingo/pingo-flow-indicator.avif',
         width: 482,
         height: 171
       },
@@ -468,9 +433,9 @@ export const PROJECT_DATA = {
           images: [
             {
               id: 'flowChart-img-1',
-              src: PingoFlowSearchImg,
+              src: '/images/pingo/pingo-flow-search.avif',
               alt: 'Pingo 美食搜集神器易用性測試圖',
-              placeholder: PingoFlowSearchImg,
+              placeholder: '/images/pingo/pingo-flow-search.avif',
               width: 1000,
               height: 329
             }
@@ -482,9 +447,9 @@ export const PROJECT_DATA = {
           images: [
             {
               id: 'flowChart-img-2',
-              src: PingoFlowCollectionImg,
+              src: '/images/pingo/pingo-flow-collection.avif',
               alt: 'Pingo 美食搜集神器易用性測試圖',
-              placeholder: PingoFlowCollectionImg,
+              placeholder: '/images/pingo/pingo-flow-collection.avif',
               width: 1000,
               height: 209
             }
@@ -505,9 +470,9 @@ export const PROJECT_DATA = {
       images: [
         {
           id: 'usability-img-1',
-          src: PingoUsabilityImg,
+          src: '/images/pingo/pingo-usability.avif',
           alt: 'Pingo 美食搜集神器易用性測試圖',
-          placeholder: PingoUsabilityImg,
+          placeholder: '/images/pingo/pingo-usability.avif',
           width: 994,
           height: 330
         }
@@ -526,9 +491,9 @@ export const PROJECT_DATA = {
       images: [
         {
           id: 'feedback-img-1',
-          src: PingoFeedbackImg,
+          src: '/images/pingo/pingo-feedback.avif',
           alt: 'Pingo 美食搜集神器易用性測試圖',
-          placeholder: PingoFeedbackImg,
+          placeholder: '/images/pingo/pingo-feedback.avif',
           width: 864,
           height: 414
         }
@@ -539,9 +504,9 @@ export const PROJECT_DATA = {
       images: [
         {
           id: 'guideline-img-1',
-          src: PingoGuidelineImg,
+          src: '/images/pingo/pingo-guideline.avif',
           alt: 'Pingo 美食搜集神器易用性測試圖',
-          placeholder: PingoGuidelineImg,
+          placeholder: '/images/pingo/pingo-guideline.avif',
           width: 980,
           height: 429
         }
@@ -558,9 +523,9 @@ export const PROJECT_DATA = {
           images: [
             {
               id: 'uiDesign-img-1',
-              src: PingoUI1Img,
+              src: '/images/pingo/pingo-ui-1.avif',
               alt: 'Pingo 地圖介面優化',
-              placeholder: PingoUI1Img,
+              placeholder: '/images/pingo/pingo-ui-1.avif',
               width: 1122,
               height: 599
             }
@@ -574,9 +539,9 @@ export const PROJECT_DATA = {
           images: [
             {
               id: 'uiDesign-img-2',
-              src: PingoUI2Img,
+              src: '/images/pingo/pingo-ui-2.avif',
               alt: 'Pingo 地圖介面優化',
-              placeholder: PingoUI2Img,
+              placeholder: '/images/pingo/pingo-ui-2.avif',
               width: 1122,
               height: 736
             }
@@ -590,9 +555,9 @@ export const PROJECT_DATA = {
           images: [
             {
               id: 'uiDesign-img-3',
-              src: PingoUI3Img,
+              src: '/images/pingo/pingo-ui-3.avif',
               alt: 'Pingo 地圖介面優化',
-              placeholder: PingoUI3Img,
+              placeholder: '/images/pingo/pingo-ui-3.avif',
               width: 1070,
               height: 585
             }
@@ -606,9 +571,9 @@ export const PROJECT_DATA = {
           images: [
             {
               id: 'uiDesign-img-4',
-              src: PingoUI4Img,
+              src: '/images/pingo/pingo-ui-4.avif',
               alt: 'Pingo 地圖介面優化',
-              placeholder: PingoUI4Img,
+              placeholder: '/images/pingo/pingo-ui-4.avif',
               width: 600,
               height: 461
             }
@@ -622,9 +587,9 @@ export const PROJECT_DATA = {
           images: [
             {
               id: 'uiDesign-img-5',
-              src: PingoUI5Img,
+              src: '/images/pingo/pingo-ui-5.avif',
               alt: 'Pingo 地圖介面優化',
-              placeholder: PingoUI5Img,
+              placeholder: '/images/pingo/pingo-ui-5.avif',
               width: 968,
               height: 555
             }
@@ -638,9 +603,9 @@ export const PROJECT_DATA = {
           images: [
             {
               id: 'uiDesign-img-6',
-              src: PingoUI6Img,
+              src: '/images/pingo/pingo-ui-6.avif',
               alt: 'Pingo 地圖介面優化',
-              placeholder: PingoUI6Img,
+              placeholder: '/images/pingo/pingo-ui-6.avif',
               width: 1122,
               height: 599
             }
@@ -718,9 +683,9 @@ export const PROJECT_DATA = {
     process: {
       title: '專案流程 / Project Process',
       image: {
-        src: KaiProcessImg,
+        src: '/images/kai/kai-process.svg',
         alt: '凱奧專案流程',
-        placeholder: KaiProcessImg,
+        placeholder: '/images/kai/kai-process.svg',
         width: 1122,
         height: 345
       }
@@ -767,39 +732,39 @@ export const PROJECT_DATA = {
         }
       ],
       picture: {
-        src: KaiSitemapImg,
+        src: '/images/kai/kai-sitemap.svg',
         alt: '凱奧網站架構',
-        placeholder: KaiSitemapImg,
+        placeholder: '/images/kai/kai-sitemap.svg',
         width: 675,
         height: 974
       }
     },
     demoVideo: {
-      videoSrc: KaiDemoVideo,
+      videoSrc: '/videos/kai-demo.mp4',
       videoLabel: '凱奧畫廊網站展示'
     },
     demo: {
       pictures: [
         {
-          src: KaiDemo1Img,
+          src: '/images/kai/kai-demo1.svg',
           alt: '凱奧網站展示',
-          placeholder: KaiDemo1Img,
+          placeholder: '/images/kai/kai-demo1.svg',
           width: 1440,
           height: 1199,
           isFullSize: true
         },
         {
-          src: KaiDemo2Img,
+          src: '/images/kai/kai-demo2.svg',
           alt: '凱奧網站展示',
-          placeholder: KaiDemo2Img,
+          placeholder: '/images/kai/kai-demo2.svg',
           width: 800,
           height: 500,
           isFullSize: false
         },
         {
-          src: KaiDemo3Img,
+          src: '/images/kai/kai-demo3.svg',
           alt: '凱奧網站展示',
-          placeholder: KaiDemo3Img,
+          placeholder: '/images/kai/kai-demo3.svg',
           width: 1440,
           height: 1408,
           isFullSize: true
@@ -911,24 +876,24 @@ export const PROJECT_DATA = {
         }
       ],
       picture: {
-        src: MandalaSitemapImg,
+        src: '/images/mandala/mandala-sitemap.svg',
         alt: '新睿網站架構',
-        placeholder: MandalaSitemapImg,
+        placeholder: '/images/mandala/mandala-sitemap.svg',
         width: 456,
         height: 369
       }
     },
     demoVideo: {
-      videoSrc: MandalaDemoVideo,
+      videoSrc: '/videos/mandala-demo.mp4',
       videoLabel: '新睿生醫網站展示'
     },
     demonstrations: {
       images: [
         {
           id: 1,
-          src: MandalaDemo1Img,
+          src: '/images/mandala/mandala-demo-1.jpg',
           alt: '',
-          placeholder: MandalaDemo1Img,
+          placeholder: '/images/mandala/mandala-demo-1.jpg',
           width: 895,
           height: 1466,
           other: {
@@ -939,9 +904,9 @@ export const PROJECT_DATA = {
         },
         {
           id: 2,
-          src: MandalaDemo2Img,
+          src: '/images/mandala/mandala-demo-2.png',
           alt: '',
-          placeholder: MandalaDemo2Img,
+          placeholder: '/images/mandala/mandala-demo-2.png',
           width: 1008,
           height: 1701,
           other: {
@@ -952,9 +917,9 @@ export const PROJECT_DATA = {
         },
         {
           id: 3,
-          src: MandalaDemo3Img,
+          src: '/images/mandala/mandala-demo-3.png',
           alt: '',
-          placeholder: MandalaDemo3Img,
+          placeholder: '/images/mandala/mandala-demo-3.png',
           width: 894,
           height: 559,
           other: {
@@ -965,9 +930,9 @@ export const PROJECT_DATA = {
         },
         {
           id: 4,
-          src: MandalaDemo4Img,
+          src: '/images/mandala/mandala-demo-4.png',
           alt: '',
-          placeholder: MandalaDemo4Img,
+          placeholder: '/images/mandala/mandala-demo-4.png',
           width: 894,
           height: 1491,
           other: {
