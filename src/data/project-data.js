@@ -64,30 +64,103 @@ export const PROJECT_DATA = {
       title: '關於專案 / About Project',
       information: [
         {
+          id: 'kol-about-info-1',
           label: '專案背景',
           content:
             '在這資訊爆炸的時代，<span class="text-secondary-03">KOL已成為數位行銷的最佳推手，也就是「網紅行銷」</span>。由於越來越多品牌有網紅行銷的需求，為了替廣告主創造個性化服務、使網紅商業合作更加迅速流暢，因此有了網紅媒合平台的誕生。'
         },
         {
+          id: 'kol-about-info-2',
           label: '產品目標',
           content:
             '打造一個數據驅動、高效匹配、簡單易用的KOL行銷平台，讓廣告主能夠輕鬆找到適合的KOL，並透過產品提升行銷成效，降低試錯成本。（成為廣告主與KOL中間的協調者，起到媒合、協調的作用，進行雙向媒合的商業行為。)'
-        },
+        }
+      ]
+    },
+    challenge: {
+      title: '設計挑戰 / Challenge',
+      information: [
         {
+          id: 'kol-challenge-info-1',
           label: '設計的挑戰',
           content:
-            '目前市場上已經有許多KOL平台，如KOL Radar、Influencer圈圈科技、台灣KOL等，<span class="text-secondary-03">如何做出差異化？並且從現有的市場找出可切入的機會點？一人設計師如何產出0到1的產品？</span>'
+            '目前市場上已經有許多KOL平台，如KOL Radar、Influencer圈圈科技、台灣KOL等，如何做出差異化？並且從現有的市場找出可切入的機會點？一人設計師如何產出0到1的產品？'
+        }
+      ],
+      pointList: [
+        {
+          id: 'kol-challenge-point-1',
+          content: '一人設計師如何產出0到1的產品？'
+        },
+        {
+          id: 'kol-challenge-point-2',
+          content: '如何做出差異化？'
+        },
+        {
+          id: 'kol-challenge-point-3',
+          content: '切入市場的機會為何？'
         }
       ]
     },
     process: {
-      title: '專案流程 / Project Process',
+      title: '設計流程 / Design Process',
       image: {
         src: KolProcessImg,
         alt: 'KOL Master 專案流程',
         placeholder: KolProcessImg,
         width: 1122,
         height: 440
+      }
+    },
+    analysis: {
+      title: '競品分析 / Competitive Analysis',
+      descriptions: [
+        {
+          id: 'kol-analysis-des-1',
+          label: '競品選擇',
+          content:
+            '以當前市佔率較高的產品進行分析，分別為「KOL Radar」、「Influencer圈圈科技」、「台灣KOL」，了解各項產品的優劣勢並制定產品策略以便能夠充分利用機會切入和改善劣勢。<span class="text-gray-04>(以2020年當時研究數據為主)</span>'
+        }
+      ]
+    },
+    sitemap: {
+      title: '網站架構 / Sitemap',
+      description: '與PM、工程師討論出主要的產品架構圖，並初步預估開發時間。',
+      indicators: [
+        {
+          id: 'kol-sitemap-indicator-1',
+          labelText: '獨立頁面',
+          labelType: {
+            type: 'filled',
+            size: 'normal',
+            color: 'gray-01'
+          }
+        },
+        {
+          id: 'kol-sitemap-indicator-2',
+          labelText: '用戶身份',
+          labelType: {
+            type: 'unfilled',
+            size: 'normal',
+            color: 'primary-04'
+          }
+        },
+        {
+          id: 'kol-sitemap-indicator-3',
+          labelText: '分類Tab',
+          labelType: {
+            type: 'unfilled',
+            size: 'normal',
+            color: 'gray-02'
+          }
+        }
+      ],
+      picture: {
+        src: PingoSitemapImg,
+        alt: 'Pingo 美食搜集神器架構',
+        placeholder: PingoSitemapImg,
+        width: 496,
+        height: 594
       }
     }
   },
