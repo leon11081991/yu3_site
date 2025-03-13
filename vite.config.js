@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite'
+import svgr from '@svgr/rollup'
 import { fileURLToPath } from 'url'
 import react from '@vitejs/plugin-react'
 
@@ -10,7 +11,7 @@ export default args => {
     args.mode === 'production' ? '[hash:base64:5]' : '[local]__[hash:base64:5]'
 
   return defineConfig({
-    plugins: [react()],
+    plugins: [react(), svgr()],
     base: '/',
     resolve: {
       alias: {
