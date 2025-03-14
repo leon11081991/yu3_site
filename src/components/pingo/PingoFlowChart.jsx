@@ -1,20 +1,16 @@
 import PropTypes from 'prop-types'
 import ContentContainer from '@/layouts/ContentContainer'
-import TextWithTitle from '@/components/ui/text/TextWithTitle'
+import ContentHeader from '@/components/molecules/ContentHeader'
 import BlurLazyImage from '@/components/ui/image/BlurLazyImage'
 
 const FlowChartHeader = ({ title, des, indicator }) => {
   return (
     <div className='grid gap-6 grid-cols-1 lg:grid-cols-2'>
       <div className='flex flex-col gap-16'>
-        <h3 className='heading-2'>{title}</h3>
-        {des.map(({ id, label, content }) => (
-          <TextWithTitle
-            key={id}
-            label={label}
-            content={content}
-          />
-        ))}
+        <ContentHeader
+          title={title}
+          descriptions={des}
+        />
       </div>
       <div className='max-w-[482px] mx-auto lg:ml-auto'>
         <BlurLazyImage

@@ -15,7 +15,8 @@ const labelClassMap = {
     'secondary-02': 'bg-secondary-02',
     'secondary-03': 'bg-secondary-03',
     'secondary-04': 'bg-secondary-04',
-    'gray-01': 'bg-gray-01'
+    'gray-01': 'bg-gray-01',
+    'gray-02': 'bg-gray-02'
   },
   unfilled: {
     'primary-01': 'border border-primary-01',
@@ -24,7 +25,8 @@ const labelClassMap = {
     'secondary-02': 'border border-secondary-02',
     'secondary-03': 'border border-secondary-03',
     'secondary-04': 'border border-secondary-04',
-    'gray-01': 'border border-gray-01'
+    'gray-01': 'border border-gray-01',
+    'gray-02': 'border border-gray-02'
   }
 }
 

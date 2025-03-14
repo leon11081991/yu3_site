@@ -1,17 +1,22 @@
 import PropTypes from 'prop-types'
+import DOMPurify from 'dompurify'
 import ContentContainer from '@/layouts/ContentContainer'
-import TextWithTitle from '@/components/ui/text/TextWithTitle'
 
 const ProjectInfoContent = ({ title, information }) => (
-  <section className='section-content border-b-[1px] border-gray-03'>
+  <section className='section-content border-b-[1px] border-gray-02'>
     <h2 className='project-title heading-1'>{title}</h2>
     <ul className='two-cols-container'>
       {information.map(item => (
-        <TextWithTitle
-          key={item.label}
-          label={item.label}
-          content={item.content}
-        />
+        <li
+          key={item.id}
+          className='flex flex-col gap-2'
+        >
+          <h3 className='heading-3 text-gray-03'>{item.label}</h3>
+          <p
+            className='text-h4 font-h4'
+            dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(item.content) }}
+          ></p>
+        </li>
       ))}
     </ul>
   </section>

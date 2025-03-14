@@ -1,12 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-import ArrowRight from '@/assets/icons/arrowRight.svg'
+import SvgIcon from '@/components/ui/SvgIcon'
 
 const MandalaProcessChart = ({ information }) => {
   return (
     <div>
-      <ul className='flex flex-wrap justify-center'>
+      <ul className='flex flex-wrap justify-center gap-4'>
         {information.map((info, index) => {
           const isFirst = index === 0
           const isLast = index === information.length - 1
@@ -22,11 +21,12 @@ const MandalaProcessChart = ({ information }) => {
                 <p className='text-p1'>{info.description}</p>
               </li>
               {!isLast && (
-                <img
-                  src={ArrowRight}
-                  alt=''
-                  className='w-8 h-8 mt-14 ml-4 mr-4'
-                />
+                <div className='w-8 h-8 mt-14'>
+                  <SvgIcon
+                    iconName='arrowRight'
+                    svgProps={{ width: '32px', height: '32px' }}
+                  />
+                </div>
               )}
             </React.Fragment>
           )

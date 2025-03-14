@@ -1,22 +1,19 @@
+import { Suspense, lazy } from 'react'
 import { useParams } from 'react-router-dom'
-
-import ProjectBanner from '@/components/ProjectBanner'
-import KolProjectPage from '@/components/pages/KolProjectPage'
-import PingoProjectPage from '@/components/pages/PingoProjectPage'
-import KaiProjectPage from '@/components/pages/KaiProjectPage'
-import MandalaProjectPage from '@/components/pages/MandalaProjectPage'
-import ContactMe from '@/components/ContactMe'
 
 import { BANNER_DATA } from '@/data/banner-data'
 import { PROJECT_DATA } from '@/data/project-data'
 
 // 定義可用的頁面元件
 const PAGE_COMPONENTS = {
-  kol: KolProjectPage,
-  pingo: PingoProjectPage,
-  kai: KaiProjectPage,
-  mandala: MandalaProjectPage
+  kol: lazy(() => import('@/components/pages/KolProjectPage')),
+  pingo: lazy(() => import('@/components/pages/PingoProjectPage')),
+  kai: lazy(() => import('@/components/pages/KaiProjectPage')),
+  mandala: lazy(() => import('@/components/pages/MandalaProjectPage'))
 }
+const NotFound = lazy(() => import('@/views/NotFound'))
+const ProjectBanner = lazy(() => import('@/components/ProjectBanner'))
+const ContactMe = lazy(() => import('@/components/ContactMe'))
 
 // 定義 Banner 圖片尺寸
 const BANNER_SIZE = {
@@ -27,10 +24,10 @@ const BANNER_SIZE = {
 const Project = () => {
   const { projectName } = useParams()
 
+  // 檢查是否為有效的 projectName
+  const isValidProject = projectName in PAGE_COMPONENTS
   // 根據 projectName 動態載入對應的頁面元件
-  // TODO: 加入 NotFound 頁面替換 null
-  const SelectedProjectPage =
-    projectName && PAGE_COMPONENTS[projectName] ? PAGE_COMPONENTS[projectName] : null
+  const SelectedProjectPage = isValidProject ? PAGE_COMPONENTS[projectName] : NotFound
 
   return (
     <>
@@ -41,8 +38,10 @@ const Project = () => {
         width={BANNER_SIZE.width}
         height={BANNER_SIZE.height}
       />
-      {SelectedProjectPage && <SelectedProjectPage {...PROJECT_DATA[projectName]} />}
-      <ContactMe />
+      <Suspense fallback={<div>Loading...</div>}>
+        <SelectedProjectPage {...(isValidProject ? PROJECT_DATA[projectName] : {})} />
+        <ContactMe />
+      </Suspense>
     </>
   )
 }
