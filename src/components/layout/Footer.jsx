@@ -1,26 +1,31 @@
+import { useLayoutEffect, useState } from 'react'
 import SvgIcon from '@/components/ui/SvgIcon'
 
 const AUTHOR = 'Lillian Lin'
-const YEAR = new Date().getFullYear()
 const SOCIALS = [
-  {
-    name: 'instagram',
-    href: '',
-    ariaLabel: 'instagram link'
-  },
-  {
-    name: 'email',
-    href: '',
-    ariaLabel: 'email address'
-  }
+  { name: 'instagram', href: '', ariaLabel: 'instagram link' },
+  { name: 'email', href: '', ariaLabel: 'email address' }
 ]
 
 export default function Footer() {
+  const [YEAR, setYEAR] = useState(null)
+
+  useLayoutEffect(() => {
+    setYEAR(new Date().getFullYear())
+  }, [])
+
   return (
     <footer className='flex justify-between items-center px-[var(--footer-padding-x)] h-[var(--footer-height)]'>
       <div>
         <p className='text-p2'>
-          © {AUTHOR} {YEAR} Copyright. All Rights Reserved.
+          © <span>{AUTHOR}</span>
+          <span
+            suppressHydrationWarning
+            className='inline-block min-w-10 text-center'
+          >
+            {YEAR}
+          </span>
+          Copyright. All Rights Reserved.
         </p>
       </div>
 
@@ -32,7 +37,7 @@ export default function Footer() {
           >
             <a
               className='flex items-center justify-center w-full h-full'
-              href={social.href}
+              href={social.href || 'javascript:void(0);'}
               aria-label={social.ariaLabel}
               target='_blank'
               rel='noreferrer noopener'
