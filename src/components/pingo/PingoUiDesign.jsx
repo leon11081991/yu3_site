@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import DOMPurify from 'dompurify'
 import ContentContainer from '@/layouts/ContentContainer'
 import BlurLazyImage from '@/components/ui/image/BlurLazyImage'
-import CheckIcon from '@/assets/icons/check.svg'
+import SvgIcon from '@/components/ui/SvgIcon'
 
 const DesignImgContent = ({ infos }) => {
   return (
@@ -23,7 +23,10 @@ const DesignImgContent = ({ infos }) => {
               <div className='flex flex-col items-center gap-2'>
                 {heading && (
                   <>
-                    <img src={CheckIcon} />
+                    <SvgIcon
+                      iconName='check'
+                      svgProps={{ color: '#FFA92D' }}
+                    />
                     <h4
                       className='text-xl'
                       dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(heading) }}
