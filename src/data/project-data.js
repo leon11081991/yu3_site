@@ -300,7 +300,103 @@ export const PROJECT_DATA = {
       ]
     },
     guideline: {
-      title: '設計規範 / Design Guideline'
+      title: '設計規範 / Design Guideline',
+      descriptions: null,
+      information: [
+        {
+          id: 'kol-guideline-information-1',
+          type: 'font',
+          content: [
+            {
+              id: 'kol-guideline-information-content-1',
+              label: 'Typography',
+              image: {
+                id: 'kol-guideline-information-img-1',
+                // src: '/images/kol/kol-wireframe.avif',
+                src: 'https://rokyokhvjqsnaargmxjb.supabase.co/storage/v1/object/sign/yu3_/image/kol/kol-guideline-typography-1.avif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ5dTNfL2ltYWdlL2tvbC9rb2wtZ3VpZGVsaW5lLXR5cG9ncmFwaHktMS5hdmlmIiwiaWF0IjoxNzQxOTQ2Njc2LCJleHAiOjE3NzM0ODI2NzZ9.XC3iji-9Q0mTFd7L52xq1HjBJgmhN8pcIDThsOzxA24',
+                alt: 'Kol 行銷wireframe圖',
+                // placeholder: '/images/kol/kol-wireframe.avif',
+                placeholder:
+                  'https://rokyokhvjqsnaargmxjb.supabase.co/storage/v1/object/sign/yu3_/image/kol/kol-guideline-typography-1.avif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ5dTNfL2ltYWdlL2tvbC9rb2wtZ3VpZGVsaW5lLXR5cG9ncmFwaHktMS5hdmlmIiwiaWF0IjoxNzQxOTQ2Njc2LCJleHAiOjE3NzM0ODI2NzZ9.XC3iji-9Q0mTFd7L52xq1HjBJgmhN8pcIDThsOzxA24',
+                width: 549,
+                height: 74
+              }
+            },
+            {
+              id: 'kol-guideline-information-content-2',
+              label: null,
+              image: {
+                id: 'kol-guideline-information-img-2',
+                // src: '/images/kol/kol-wireframe.avif',
+                src: 'https://rokyokhvjqsnaargmxjb.supabase.co/storage/v1/object/sign/yu3_/image/kol/kol-guideline-typography-2.avif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ5dTNfL2ltYWdlL2tvbC9rb2wtZ3VpZGVsaW5lLXR5cG9ncmFwaHktMi5hdmlmIiwiaWF0IjoxNzQxOTQ2NzE0LCJleHAiOjE3NzM0ODI3MTR9.WLwcR1aaHpJ9EOQ__41EkQR-oGLTq2vD85zgUUymfcY',
+                alt: 'Kol 行銷wireframe圖',
+                // placeholder: '/images/kol/kol-wireframe.avif',
+                placeholder:
+                  'https://rokyokhvjqsnaargmxjb.supabase.co/storage/v1/object/sign/yu3_/image/kol/kol-guideline-typography-2.avif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ5dTNfL2ltYWdlL2tvbC9rb2wtZ3VpZGVsaW5lLXR5cG9ncmFwaHktMi5hdmlmIiwiaWF0IjoxNzQxOTQ2NzE0LCJleHAiOjE3NzM0ODI3MTR9.WLwcR1aaHpJ9EOQ__41EkQR-oGLTq2vD85zgUUymfcY',
+                width: 549,
+                height: 74
+              }
+            }
+          ]
+        },
+        {
+          id: 'kol-guideline-information-2',
+          type: 'color',
+          content: [
+            {
+              id: 'kol-guideline-information-content-3',
+              label: 'Brand Color',
+              image: {
+                id: 'kol-guideline-information-img-3',
+                // src: '/images/kol/kol-wireframe.avif',
+                src: 'https://rokyokhvjqsnaargmxjb.supabase.co/storage/v1/object/sign/yu3_/image/kol/kol-guideline-color-1.avif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ5dTNfL2ltYWdlL2tvbC9rb2wtZ3VpZGVsaW5lLWNvbG9yLTEuYXZpZiIsImlhdCI6MTc0MTk1MTI0MSwiZXhwIjoxNzczNDg3MjQxfQ.74GrtkgQuOiYmgaFkapFNxSpkZCBT-QbzrFtiaCQ7Fc',
+                alt: 'Kol 顏色',
+                // placeholder: '/images/kol/kol-wireframe.avif',
+                placeholder:
+                  'https://rokyokhvjqsnaargmxjb.supabase.co/storage/v1/object/sign/yu3_/image/kol/kol-guideline-color-1.avif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ5dTNfL2ltYWdlL2tvbC9rb2wtZ3VpZGVsaW5lLWNvbG9yLTEuYXZpZiIsImlhdCI6MTc0MTk1MTI0MSwiZXhwIjoxNzczNDg3MjQxfQ.74GrtkgQuOiYmgaFkapFNxSpkZCBT-QbzrFtiaCQ7Fc',
+                width: 549,
+                height: 100
+              }
+            },
+            {
+              id: 'kol-guideline-information-content-4',
+              label: 'Gray Scale',
+              image: {
+                id: 'kol-guideline-information-img-4',
+                // src: '/images/kol/kol-wireframe.avif',
+                src: 'https://rokyokhvjqsnaargmxjb.supabase.co/storage/v1/object/sign/yu3_/image/kol/kol-guideline-color-2.avif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ5dTNfL2ltYWdlL2tvbC9rb2wtZ3VpZGVsaW5lLWNvbG9yLTIuYXZpZiIsImlhdCI6MTc0MTk1MTM0NiwiZXhwIjoxNzczNDg3MzQ2fQ.Bqe0AIk_T4ARjxp8_MGu1vKuy4vqMz-l501jWNA4taU',
+                alt: 'Kol 行銷wireframe圖',
+                // placeholder: '/images/kol/kol-wireframe.avif',
+                placeholder:
+                  'https://rokyokhvjqsnaargmxjb.supabase.co/storage/v1/object/sign/yu3_/image/kol/kol-guideline-color-2.avif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ5dTNfL2ltYWdlL2tvbC9rb2wtZ3VpZGVsaW5lLWNvbG9yLTIuYXZpZiIsImlhdCI6MTc0MTk1MTM0NiwiZXhwIjoxNzczNDg3MzQ2fQ.Bqe0AIk_T4ARjxp8_MGu1vKuy4vqMz-l501jWNA4taU',
+                width: 549,
+                height: 100
+              }
+            }
+          ]
+        },
+        {
+          id: 'kol-guideline-information-3',
+          type: 'component',
+          content: [
+            {
+              id: 'kol-guideline-information-content-3',
+              label: 'Component',
+              image: {
+                id: 'kol-guideline-information-img-3',
+                // src: '/images/kol/kol-wireframe.avif',
+                src: 'https://rokyokhvjqsnaargmxjb.supabase.co/storage/v1/object/sign/yu3_/image/kol/kol-guideline-component.avif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ5dTNfL2ltYWdlL2tvbC9rb2wtZ3VpZGVsaW5lLWNvbXBvbmVudC5hdmlmIiwiaWF0IjoxNzQxOTUwMTU4LCJleHAiOjE3NzM0ODYxNTh9.4Q3MVcEljzkPE6NLRnIwtZYip0-z1ZEmhBxl_3H7oNA',
+                alt: 'Kol 行銷wireframe圖',
+                // placeholder: '/images/kol/kol-wireframe.avif',
+                placeholder:
+                  'https://rokyokhvjqsnaargmxjb.supabase.co/storage/v1/object/sign/yu3_/image/kol/kol-guideline-component.avif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ5dTNfL2ltYWdlL2tvbC9rb2wtZ3VpZGVsaW5lLWNvbXBvbmVudC5hdmlmIiwiaWF0IjoxNzQxOTUwMTU4LCJleHAiOjE3NzM0ODYxNTh9.4Q3MVcEljzkPE6NLRnIwtZYip0-z1ZEmhBxl_3H7oNA',
+                width: 1122,
+                height: 1124
+              }
+            }
+          ]
+        }
+      ]
     },
     reflection: {
       title: '學習&反思 / Reflection',
