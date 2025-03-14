@@ -108,6 +108,31 @@ const KolProjectPage = props => (
           descriptions={props.guideline.descriptions}
         />
       }
+      mainContent={
+        <div className='flex flex-col gap-16'>
+          {props.guideline.information.map(guide => (
+            <div
+              key={guide.id}
+              className='flex flex-wrap gap-6'
+            >
+              {guide.content.map(typeContent => (
+                <div
+                  key={typeContent.id}
+                  className='flex-1 flex flex-col justify-end gap-6 min-w-[300px]'
+                >
+                  <div className='text-h3 font-h3 text-gray-04'>{typeContent.label}</div>
+                  <div>
+                    <BlurLazyImage
+                      key={typeContent.image.id}
+                      {...typeContent.image}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+      }
     />
 
     {/* 成果展示 / UI Design */}
