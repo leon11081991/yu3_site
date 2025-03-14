@@ -12,6 +12,18 @@ export default args => {
 
   return defineConfig({
     plugins: [react(), svgr()],
+    build: {
+      rollupOptions: {
+        treeshake: true
+      },
+      minify: 'terser',
+      terserOptions: {
+        compress: {
+          drop_console: true, // 移除 console.log
+          drop_debugger: true // 移除 debugger
+        }
+      }
+    },
     base: '/',
     resolve: {
       alias: {
