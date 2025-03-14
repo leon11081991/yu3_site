@@ -22,5 +22,5 @@ export function useDynamicSvgImport(iconName) {
     importSvgIcon()
   }, [iconName])
 
-  return { error, loading, SvgIcon: importedIconRef.current }
+  return { error, loading, Icon: importedIconRef.current }
 }
