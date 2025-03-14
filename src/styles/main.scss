@@ -10,6 +10,14 @@
   :root {
     --header-height: 5rem;
     --footer-height: 5rem;
+    --header-padding-x: 44px;
+    --footer-padding-x: 44px;
+
+    --hamburger-width: 50px;
+    --hamburger-height: 50px;
+
+    --social-icon-width: 44px;
+    --social-icon-height: 44px;
   }
 }
 
@@ -34,7 +42,7 @@
   }
 
   .with-divider {
-    @apply border-b-[1px] border-gray-03;
+    @apply border-b-[1px] border-gray-02;
   }
 
   .section-container-inner {
@@ -54,17 +62,27 @@
 
 @layer components {
   .heading-1 {
-    @apply text-h1 tracking-h1 font-medium;
+    @apply text-h1 tracking-h1 font-h1;
   }
   .heading-2 {
-    @apply text-h2 tracking-h2;
+    @apply text-h2 tracking-h2 font-h2;
   }
   .heading-3 {
-    @apply text-h3 tracking-h3;
+    @apply text-h3 tracking-h3 font-h3;
   }
   .heading-4 {
-    @apply text-h4 tracking-h4 font-medium;
+    @apply text-h4 tracking-h4 font-h4;
   }
 } 
+
+@layer components {
+  .text-p-1 {
+    @apply text-p1 font-p1;
+  }
+
+  .text-p-2 {
+    @apply text-p2 font-p2;
+  }
+}
 
 
