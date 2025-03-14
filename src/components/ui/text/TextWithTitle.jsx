@@ -4,9 +4,9 @@ import DOMPurify from 'dompurify'
 const TextWithTitle = ({ label, content }) => {
   return (
     <li className='flex flex-col gap-2'>
-      {label && <h5 className='heading-3 text-gray-03'>{label}</h5>}
+      {label && <h4 className='heading-3 text-gray-03'>{label}</h4>}
       <p
-        className='text-p1'
+        className='text-p-1'
         dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(content) }}
       ></p>
     </li>

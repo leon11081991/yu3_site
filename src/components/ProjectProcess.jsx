@@ -1,14 +1,15 @@
 import PropTypes from 'prop-types'
-import ContentContainer from '@/layouts/ContentContainer'
+import BaseSectionGrid from '@/components/templates/BaseSectionGrid'
+import ContentHeader from '@/components/molecules/ContentHeader'
 
-const ProjectProcess = ({ title, children }) => (
-  <ContentContainer>
-    <section className='section-content border-b-[1px] border-gray-03'>
-      <h3 className='heading-2 mb-16'>{title}</h3>
-      {children}
-    </section>
-  </ContentContainer>
-)
+const ProjectProcess = ({ title, children }) => {
+  return (
+    <BaseSectionGrid
+      topContent={<ContentHeader title={title} />}
+      mainContent={children}
+    />
+  )
+}
 
 ProjectProcess.propTypes = {
   title: PropTypes.string.isRequired,

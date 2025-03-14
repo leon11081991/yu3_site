@@ -2,12 +2,12 @@ import PropTypes from 'prop-types'
 import { useDynamicSvgImport } from '@/hooks/useDynamicSvgImport'
 
 const SvgIcon = ({ iconName, svgProps }) => {
-  const { SvgIcon } = useDynamicSvgImport(iconName)
+  const { Icon } = useDynamicSvgImport(iconName)
 
   return (
-    SvgIcon && (
+    Icon && (
       <div className='flex items-center justify-center'>
-        <SvgIcon {...svgProps} />
+        <Icon {...svgProps} />
       </div>
     )
   )
