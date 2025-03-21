@@ -35,7 +35,7 @@ const ProjectCard = ({ name, title, category, cover, tagList }: CardProps) => {
             className='absolute left-4 top-4 z-10'
           />
           <BlurLazyImage
-            className='group-hover:scale-110'
+            className='transition duration-300 group-hover:scale-110'
             src={cover.src}
             alt={cover.alt}
             placeholder={cover.placeholderImg}
