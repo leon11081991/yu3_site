@@ -1418,7 +1418,7 @@ export const PROJECT_DATA = {
       reflectionList: [
         {
           id: 'pingo-reflection-info-1',
-          content: '透過易用性測試，覺察設計盲點並優化。'
+          content: '簡化不等於刪減，而是提升關鍵資訊的可見度。'
         },
         {
           id: 'pingo-reflection-info-2',
