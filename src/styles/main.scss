@@ -1,4 +1,5 @@
 @forward "@/styles/abstracts/variables";
+@forward "@/styles/abstracts/font";
 @forward "@/styles/reset";
 
 @tailwind base;
@@ -87,3 +88,14 @@
 }
 
 
+// 全域樣式
+html {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: 'PingFang TC', 'Noto Sans TC', sans-serif;
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
