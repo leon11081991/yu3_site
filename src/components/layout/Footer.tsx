@@ -27,7 +27,7 @@ export default function Footer() {
     <div className='relative'>
       {isShowContact && <ContactMe />}
       <footer
-        className={`${!isShowContact ? 'relative' : 'absolute bottom-0'}  w-full flex justify-between items-center px-[var(--footer-padding-x)] h-[var(--footer-height)]`}
+        className={`${!isShowContact ? 'relative' : 'absolute bottom-0'}  w-full flex justify-between items-center px-[var(--main-content-padding-x)] lg:px-[var(--main-content-padding-x)] h-[var(--footer-height)]`}
       >
         <div>
           <p className='text-p2'>

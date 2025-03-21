@@ -25,6 +25,7 @@ export default [
       '@typescript-eslint': typescriptPlugin
     },
     rules: {
+      "react/prop-types": "off",
       'react/react-in-jsx-scope': 'off',
       "no-unused-vars": "off", // 關閉 ESlint 的檢查，避免和 TypeScript 的檢查衝突
       '@typescript-eslint/no-unused-vars': 'error', // 開啟 TypeScript 的檢查

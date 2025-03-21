@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types'
 import ProjectInfo from '@/components/ProjectInfo'
-import PingoBgResearch from '@/components/pingo/PingoBgResearch'
+import ResearchBarChartList from '@/features/projects/pingo/ResearchBarChartList'
 import PingoFlowChart from '@/components/pingo/PingoFlowChart'
 import PingoGuideline from '@/components/pingo/PingoGuideline'
 import PingoUiDesign from '@/components/pingo/PingoUiDesign'
+import TextWithTitle from '@/components/ui/text/TextWithTitle'
 
 import BaseSectionGrid from '@/components/templates/BaseSectionGrid'
 import ContentHeader from '@/components/molecules/ContentHeader'
@@ -28,7 +29,28 @@ const PingoProjectPage = props => {
         }
       />
 
-      <PingoBgResearch {...props.backgroundResearch} />
+      {/* 背景研究 / Background Research */}
+      <BaseSectionGrid
+        topContent={
+          <ContentHeader
+            title={props.backgroundResearch.title}
+            descriptions={props.backgroundResearch.descriptions}
+          >
+            <div className='flex flex-col gap-16'>
+              <ResearchBarChartList sources={props.backgroundResearch.dataSources} />
+              <ul className='flex flex-col gap-8'>
+                {props.backgroundResearch.information.map(item => (
+                  <TextWithTitle
+                    key={item.label}
+                    label={item.label}
+                    content={item.content}
+                  />
+                ))}
+              </ul>
+            </div>
+          </ContentHeader>
+        }
+      />
 
       {/* 使用者研究 / User Research */}
       <BaseSectionGrid

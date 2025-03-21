@@ -918,7 +918,7 @@ export const PROJECT_DATA = {
         {
           id: 'pingo-info-2',
           label: '負責項目',
-          content: 'UX Research、UI介面調整、搜尋流程優化',
+          content: '使用者研究、流程優化、易用性測試、介面設計',
           isTagType: false
         },
         {
@@ -954,7 +954,7 @@ export const PROJECT_DATA = {
           id: 'pingo-about-info-2',
           label: '期望目標',
           content:
-            '這一次Redesign的重點希望可以<span class="text-secondary-02">優化現階段的使用流程＆產品體驗</span>，讓使用者在操作上更直覺並符合使用者的需求，提升用戶的黏著度與滿意度。'
+            '這一次Redesign的主要目標是<span class="text-secondary-02">優化現階段的使用流程＆產品體驗</span>，讓使用者在操作上更直覺並符合使用者的需求，提升用戶的黏著度與滿意度。'
         }
       ]
     },
@@ -1418,7 +1418,7 @@ export const PROJECT_DATA = {
       reflectionList: [
         {
           id: 'pingo-reflection-info-1',
-          content: '透過易用性測試，覺察設計盲點並優化。'
+          content: '簡化不等於刪減，而是提升關鍵資訊的可見度。'
         },
         {
           id: 'pingo-reflection-info-2',
