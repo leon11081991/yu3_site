@@ -28,7 +28,7 @@ const Home = () => {
       <ContentContainer>
         <section
           ref={el => registerSection('project-list', el as HTMLElement)}
-          className='section-container'
+          className='pt-[80px] pb-[var(--section-padding-y--mobile)] lg:py-[var(--section-padding-y)]'
         >
           <TabFilter
             tabs={TypeFilter}
