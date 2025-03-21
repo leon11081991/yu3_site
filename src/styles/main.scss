@@ -1,0 +1,89 @@
+@forward "@/styles/abstracts/variables";
+@forward "@/styles/reset";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --main-content-padding-x: 44px;
+    --main-content-padding-x--mobile: 24px;
+
+    --header-height: 80px;
+    --footer-height: 80px;
+    --header-padding-x: 44px;
+    --footer-padding-x: 44px;
+
+    --sidebar-height: 357px;
+    --hamburger-width: 50px;
+    --hamburger-height: 50px;
+
+    --section-padding-y: 104px;
+    --section-padding-y--mobile: 56px;
+
+    --social-icon-width: 44px;
+    --social-icon-height: 44px;
+  }
+}
+
+@layer components {
+  .content {
+    @apply my-0 mx-auto grid grid-cols-12 gap-6 px-[var(--main-content-padding-x--mobile)] md:px-[var(--main-content-padding-x)] max-w-[1440px];
+
+    &-container {
+      @apply col-start-1 col-end-[-1] md:col-start-2 md:col-end-[-2];
+    }
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply py-[var(--section-padding-y--mobile)] md:py-[var(--section-padding-y)];
+  }
+
+  .with-divider {
+    @apply border-b-[1px] border-gray-02;
+  }
+
+  .section-container-inner {
+    @apply flex flex-col gap-16;
+  }
+}
+
+@layer components {
+  .section-top-cols-grid {
+    @apply grid  grid-cols-1 md:grid-cols-[3fr_7fr] gap-10 md:gap-6;
+  }
+
+  .two-cols-container {
+    @apply grid gap-6 grid-cols-1 md:grid-cols-[3fr_7fr];
+  }
+}
+
+@layer components {
+  .heading-1 {
+    @apply text-h1 tracking-h1 font-h1;
+  }
+  .heading-2 {
+    @apply text-h2 tracking-h2 font-h2;
+  }
+  .heading-3 {
+    @apply text-h3 tracking-h3 font-h3;
+  }
+  .heading-4 {
+    @apply text-h4 tracking-h4 font-h4;
+  }
+} 
+
+@layer components {
+  .text-p-1 {
+    @apply text-p1 font-p1;
+  }
+
+  .text-p-2 {
+    @apply text-p2 font-p2;
+  }
+}
+
+

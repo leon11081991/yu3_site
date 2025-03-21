@@ -1,0 +1,67 @@
+{
+  "name": "yu33__site",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "commit": "git-cz",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx,js,jsx",
+    "format": "prettier --write .",
+    "prepare": "if [ \"$VERCEL\" != \"1\" ]; then husky install; fi",
+    "preview": "vite preview",
+    "release": "standard-version",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dompurify": "^3.2.4",
+    "framer-motion": "^12.5.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^6.21.2",
+    "sass": "^1.84.0"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^19.7.1",
+    "@eslint/js": "^9.20.0",
+    "@svgr/rollup": "^8.1.0",
+    "@types/node": "^22.13.10",
+    "@types/react": "^19.0.11",
+    "@types/react-dom": "^19.0.4",
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@typescript-eslint/parser": "^8.26.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "autoprefixer": "^10.4.20",
+    "commitizen": "^4.3.1",
+    "commitlint": "^19.7.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^9.20.1",
+    "eslint-config-prettier": "^10.0.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.18",
+    "globals": "^15.15.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "postcss": "^8.5.2",
+    "prettier": "^3.5.1",
+    "standard-version": "^9.5.0",
+    "tailwindcss": "^3.4.17",
+    "terser": "^5.39.0",
+    "typescript": "^5.8.2",
+    "vite": "^6.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}

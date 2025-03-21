@@ -1,0 +1,34 @@
+// 全域樣式
+html {
+  font-size: 16px;
+  font-weight: '300';
+}
+
+body {
+  background-color: $background-color;
+  color: $text-color;
+}
+
+.section-content {
+  // @apply border-b-[1px] border-gray-03;
+  padding-block: 104px;
+}
+
+.project-title {
+  @apply mb-6 md:mb-10;
+}
+
+
+
+
+
+
+
+
+.tab {
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s ease;
+}
