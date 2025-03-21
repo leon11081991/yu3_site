@@ -13,8 +13,6 @@
 
     --header-height: 80px;
     --footer-height: 80px;
-    --header-padding-x: 44px;
-    --footer-padding-x: 44px;
 
     --sidebar-height: 357px;
     --hamburger-width: 50px;
@@ -30,7 +28,7 @@
 
 @layer components {
   .content {
-    @apply my-0 mx-auto grid grid-cols-12 gap-6 px-[var(--main-content-padding-x--mobile)] md:px-[var(--main-content-padding-x)] max-w-[1440px];
+    @apply my-0 mx-auto grid grid-cols-12 gap-6 px-[var(--main-content-padding-x--mobile)] lg:px-[var(--main-content-padding-x)] max-w-[1440px];
 
     &-container {
       @apply col-start-1 col-end-[-1] md:col-start-2 md:col-end-[-2];

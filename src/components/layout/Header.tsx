@@ -15,7 +15,7 @@ const Header: React.FC<HeaderProps> = ({ appName }) => {
   }
 
   return (
-    <header className='sticky top-0 px-[var(--header-padding-x)] flex justify-between items-center h-[var(--header-height)] z-50'>
+    <header className='sticky top-0 px-[var(--main-content-padding-x--mobile)] lg:px-[var(--main-content-padding-x)] flex justify-between items-center h-[var(--header-height)] z-50'>
       <div>
         <h1 className='text-logo tracking-logo'>
           <Link to='/'>{appName}</Link>

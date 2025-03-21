@@ -26,7 +26,7 @@ const HeroSectionFooter = () => {
 
 const HeroSection = () => {
   return (
-    <section className='mx-[var(--main-content-padding-x)] h-[calc(100dvh-80px)] flex flex-col with-divider'>
+    <section className='mx-[var(--main-content-padding-x--mobile)] lg:mx-[var(--main-content-padding-x)] h-[calc(100dvh-80px)] flex flex-col with-divider'>
       <div className='flex-1 flex flex-col md:flex-row items-center justify-center gap-10'>
         <div className='max-w-[300px]'>
           <BlurLazyImage
