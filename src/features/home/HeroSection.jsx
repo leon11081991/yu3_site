@@ -39,7 +39,7 @@ const HeroSection = () => {
         </div>
 
         <div className='flex flex-col gap-4'>
-          <p className='text-[20px]'>Hello I&apos;m Lillian Lin</p>
+          <p className='text-[20px] font-normal'>Hello I’m Lillian Lin</p>
           <p className='text-h2 font-h2 text-gray-03'>UI/UX Designer</p>
         </div>
       </div>
