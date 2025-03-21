@@ -27,7 +27,7 @@ const Home = () => {
       <HeroSection />
       <ContentContainer>
         <section
-          ref={el => registerSection('project-list', el)}
+          ref={el => registerSection('project-list', el as HTMLElement)}
           className='section-container'
         >
           <TabFilter
