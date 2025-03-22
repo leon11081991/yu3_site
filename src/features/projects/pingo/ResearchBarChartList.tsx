@@ -10,7 +10,7 @@ interface ResearchBarChartListProps {
 
 const ResearchBarChartList = ({ sources }: ResearchBarChartListProps) => {
   return (
-    <div className='flex gap-14'>
+    <div className='flex gap-14 flex-col lg:flex-row'>
       {sources.map(({ title, source, chartSources }) => (
         <ul
           key={title}
