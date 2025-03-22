@@ -33,7 +33,7 @@ const DesignImgContent = ({ infos }: DesignImgContentProps) => {
             className={hasBgColor ? 'bg-gray-01' : ''}
           >
             <section
-              className={`${isFirst ? '' : 'pt-[var(--section-padding-y--mobile)] md:pt-[var(--section-padding-y)]'} ${noPaddingButton ? '' : 'pb-[var(--section-padding-y--mobile)] md:pb-[var(--section-padding-y)]'} ${isLast ? 'with-divider' : ''} flex flex-col gap-10`}
+              className={`${isFirst ? '' : 'pt-[var(--section-padding-y--mobile)] lg:pt-[var(--section-padding-y)]'} ${noPaddingButton ? '' : 'pb-[var(--section-padding-y--mobile)] lg:pb-[var(--section-padding-y)]'} ${isLast ? 'with-divider' : ''} flex flex-col gap-10`}
             >
               <div className='flex flex-col items-center gap-2'>
                 {heading && (
@@ -43,12 +43,12 @@ const DesignImgContent = ({ infos }: DesignImgContentProps) => {
                       svgProps={{ color: '#FFA92D' }}
                     />
                     <h4
-                      className='text-xl'
+                      className='text-h3 font-h3 lg:text-xl'
                       dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(heading) }}
                     ></h4>
                   </>
                 )}
-                <p className='text-xl'>{subheading}</p>
+                <p className='text-h3 font-h3 lg:text-xl'>{subheading}</p>
               </div>
               <div>
                 {images.map(img => {
@@ -83,7 +83,7 @@ const PingoUiDesign = ({ title, information }: PingoUiDesignProps) => {
   return (
     <>
       <ContentContainer className='bg-gray-01'>
-        <div className='pt-[var(--section-padding-y--mobile)] md:pt-[var(--section-padding-y)]'>
+        <div className='pt-[var(--section-padding-y--mobile)] lg:pt-[var(--section-padding-y)]'>
           <h3 className='heading-2'>{title}</h3>
         </div>
       </ContentContainer>

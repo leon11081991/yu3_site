@@ -1399,7 +1399,7 @@ export const PROJECT_DATA = {
               alt: 'Pingo 地圖介面優化',
               placeholder: '/images/pingo/pingo-ui-6.avif',
               width: 1122,
-              height: 599
+              height: 598.6
             }
           ]
         }
