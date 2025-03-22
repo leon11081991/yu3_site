@@ -1,19 +1,25 @@
 import React, { useState } from 'react'
 
-const ContactMe: React.FC = () => {
+interface ContactMeProps {
+  handleBgColor: (color: string) => void
+}
+
+const ContactMe: React.FC<ContactMeProps> = ({ handleBgColor }) => {
   const [isHovered, setIsHovered] = useState(false)
 
   const handleMouseEnter = () => {
     setIsHovered(true)
+    handleBgColor('#2c2c2c')
   }
 
   const handleMouseLeave = () => {
     setIsHovered(false)
+    handleBgColor('')
   }
 
   return (
     <section
-      className={`${isHovered ? 'bg-gray-01' : ''} min-h-[calc(100dvh)] flex justify-center items-center transition ease-out duration-300`}
+      className={`${isHovered ? 'bg-gray-01' : ''} min-h-[calc(100dvh-var(--footer-height--mobile))] md:min-h-[calc(100dvh-var(--footer-height))] flex justify-center items-center transition-colors duration-300`}
     >
       <a
         target='_blank'
