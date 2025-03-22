@@ -13,7 +13,7 @@ const ContentHeader = ({ title, descriptions, className = '', children }: Conten
     <>
       <h3 className='heading-3'>{title}</h3>
       {(descriptions || children) && (
-        <div className={`${children ? 'flex flex-col gap-16' : ''} ${className}`}>
+        <div className={`${children ? 'flex flex-col gap-6 lg:gap-16' : ''} ${className}`}>
           {descriptions && <DescriptionBlock descriptions={descriptions} />}
           {children}
         </div>

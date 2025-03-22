@@ -12,6 +12,7 @@ const SOCIALS = [
 
 export default function Footer() {
   const [YEAR, setYEAR] = useState(0)
+  const [bgColor, setBgColor] = useState('')
   const { pathname } = useLocation()
 
   const notShowContact = ['/about']
@@ -21,13 +22,16 @@ export default function Footer() {
     setYEAR(new Date().getFullYear())
   }, [])
 
-  console.log(pathname)
+  function handleBgColor(color: string) {
+    setBgColor(color)
+  }
 
   return (
     <div className='relative'>
-      {isShowContact && <ContactMe />}
+      {isShowContact && <ContactMe handleBgColor={handleBgColor} />}
       <footer
-        className={`${!isShowContact ? 'relative' : 'absolute bottom-0'}  w-full flex justify-between items-center px-[var(--main-content-padding-x)] lg:px-[var(--main-content-padding-x)] h-[var(--footer-height)]`}
+        className={`w-full flex flex-col md:flex-row justify-center md:justify-between items-center gap-4 px-[var(--main-content-padding-x--mobile)] lg:px-[var(--main-content-padding-x)] h-[var(--footer-height--mobile)] md:h-[var(--footer-height)] transition-colors duration-300`}
+        style={{ backgroundColor: bgColor }}
       >
         <div>
           <p className='text-p2'>

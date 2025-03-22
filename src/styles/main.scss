@@ -13,13 +13,14 @@
 
     --header-height: 80px;
     --footer-height: 80px;
+    --footer-height--mobile: 126px;
 
     --sidebar-height: 357px;
     --hamburger-width: 50px;
     --hamburger-height: 50px;
 
     --section-padding-y: 104px;
-    --section-padding-y--mobile: 56px;
+    --section-padding-y--mobile: 40px;
 
     --social-icon-width: 44px;
     --social-icon-height: 44px;
@@ -52,7 +53,7 @@
 
 @layer components {
   .section-top-cols-grid {
-    @apply grid  grid-cols-1 lg:grid-cols-[3fr_7fr] gap-10 md:gap-6;
+    @apply grid  grid-cols-1 lg:grid-cols-[3fr_7fr] gap-6;
   }
 
   .two-cols-container {

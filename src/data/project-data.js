@@ -291,7 +291,7 @@ export const PROJECT_DATA = {
         {
           id: 'kol-info-2',
           label: '負責項目',
-          content: '競品分析、用戶訪談、UX研究、UX設計、UI介面設計、Design Guideline產出。',
+          content: '競品分析、使用者訪談、流程設計、介面設計、設計規範產出。',
           isTagType: false
         },
         {
@@ -1444,7 +1444,7 @@ export const PROJECT_DATA = {
         {
           id: 'kai-info-2',
           label: '負責項目',
-          content: 'Sitemap繪製、品牌視覺規劃、UI Design、Design Guideline 產出。',
+          content: '品牌視覺規劃、Sitemap繪製、介面設計、設計規範產出。',
           isTagType: false
         },
         {
@@ -1456,7 +1456,7 @@ export const PROJECT_DATA = {
         {
           id: 'kai-info-4',
           label: '團隊成員',
-          content: 'Lillian Lin (Yu.3_) / Leon Chou / Ya Ching Kao',
+          content: '專案經理(PM) / UIUX設計師 / 前端工程師',
           isTagType: false
         },
         {
@@ -1594,7 +1594,7 @@ export const PROJECT_DATA = {
         {
           id: 'mandala-info-2',
           label: '負責項目',
-          content: 'Sitemap繪製、品牌視覺規劃、UI Design、Design Guideline 產出。',
+          content: '品牌視覺規劃、Sitemap繪製、UI設計、設計規範產出。',
           isTagType: false
         },
         {
@@ -1606,7 +1606,7 @@ export const PROJECT_DATA = {
         {
           id: 'mandala-info-4',
           label: '團隊成員',
-          content: 'Lillian Lin (Yu.3_) / Leon Chou / Ya Ching Kao',
+          content: '專案經理(PM) / UIUX設計師 / 前端工程師',
           isTagType: false
         },
         {

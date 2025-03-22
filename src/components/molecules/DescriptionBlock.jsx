@@ -4,7 +4,7 @@ import TextWithTitle from '@/components/ui/text/TextWithTitle'
 const DescriptionBlock = ({ descriptions }) => {
   return (
     <div className='flex flex-col gap-10'>
-      <ul className='flex flex-col gap-10 md:gap-8'>
+      <ul className='flex flex-col gap-6 lg:gap-16'>
         {descriptions.map(item => (
           <TextWithTitle
             key={item.id}
