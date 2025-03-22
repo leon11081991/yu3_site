@@ -1,4 +1,4 @@
-import BarChartItem from '@/components/BarChartItem'
+import ProgressBarItem from '@/components/ProgressBarItem'
 
 interface ResearchBarChartListProps {
   sources: {
@@ -10,7 +10,7 @@ interface ResearchBarChartListProps {
 
 const ResearchBarChartList = ({ sources }: ResearchBarChartListProps) => {
   return (
-    <div className='flex gap-14'>
+    <div className='flex gap-14 flex-col lg:flex-row'>
       {sources.map(({ title, source, chartSources }) => (
         <ul
           key={title}
@@ -23,7 +23,7 @@ const ResearchBarChartList = ({ sources }: ResearchBarChartListProps) => {
             </div>
             <div className='flex flex-col gap-6'>
               {chartSources.map(item => (
-                <BarChartItem
+                <ProgressBarItem
                   key={item.id}
                   {...item}
                 />

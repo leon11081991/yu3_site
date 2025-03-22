@@ -38,7 +38,7 @@
 
 @layer components {
   .section-container {
-    @apply py-[var(--section-padding-y--mobile)] md:py-[var(--section-padding-y)];
+    @apply py-[var(--section-padding-y--mobile)] lg:py-[var(--section-padding-y)];
   }
 
   .with-divider {
@@ -52,11 +52,11 @@
 
 @layer components {
   .section-top-cols-grid {
-    @apply grid  grid-cols-1 md:grid-cols-[3fr_7fr] gap-10 md:gap-6;
+    @apply grid  grid-cols-1 lg:grid-cols-[3fr_7fr] gap-10 md:gap-6;
   }
 
   .two-cols-container {
-    @apply grid gap-6 grid-cols-1 md:grid-cols-[3fr_7fr];
+    @apply grid gap-6 grid-cols-1 lg:grid-cols-[3fr_7fr];
   }
 }
 
