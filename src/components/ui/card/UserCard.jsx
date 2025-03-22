@@ -2,8 +2,8 @@ import PropTypes from 'prop-types'
 
 const UserCard = ({ title, content, userImage }) => {
   return (
-    <div className='grid grid-cols-1 md:grid-cols-[80px_1fr] gap-4 bg-gray-01 px-7 py-6 rounded-lg items-center'>
-      <div className='w-20 h-20 mx-auto'>
+    <div className='grid grid-cols-[50px_1fr] lg:grid-cols-[80px_1fr] gap-4 bg-gray-01 px-7 py-6 rounded-lg  items-start lg:items-center'>
+      <div className='w-[50px] h-[50px] lg:w-20 lg:h-20'>
         <img
           src={userImage}
           alt='user'

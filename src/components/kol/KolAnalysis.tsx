@@ -53,7 +53,7 @@ const AnalysisContent = ({ img, analysisList, conclusion }: AnalysisContentProps
         width={img.width}
         height={img.height}
       />
-      <ul className='grid grid-cols-3 items-center gap-4'>
+      <ul className='grid grid-cols-1 lg:grid-cols-3 items-center gap-4'>
         {analysisList.map(item => (
           <AnalysisItem
             key={item.id}
@@ -81,17 +81,17 @@ const AnalysisItem = ({ item }: AnalysisItemProps) => {
             alt={item.companyName}
           />
         </div>
-        <div className='text-h3 text-center'>{item.companyName}</div>
-        <div className='text-p-1 text-center'>{item.content}</div>
+        <div className='text-h3 font-h3 text-center'>{item.companyName}</div>
+        <div className='text-p1 font-p1 text-center'>{item.content}</div>
       </div>
       <div className='flex flex-col gap-4'>
         <div>
-          <h5 className='text-p-1 text-gray-03'>優勢</h5>
-          <p className='text-p-1'>{item.pros}</p>
+          <h5 className='text-p1 font-p1 text-gray-03'>優勢</h5>
+          <p className='text-p1 font-p1'>{item.pros}</p>
         </div>
         <div>
-          <h5 className='text-p-1 text-gray-03'>劣勢</h5>
-          <p className='text-p-1'>{item.cons}</p>
+          <h5 className='text-p1 font-p1 text-gray-03'>劣勢</h5>
+          <p className='text-p1 font-p1'>{item.cons}</p>
         </div>
       </div>
     </li>
@@ -106,9 +106,9 @@ const AnalysisConclusion = ({ content }: AnalysisConclusionProps) => {
           iconName='check'
           svgProps={{ color: '#FF7B8E' }}
         />
-        <h5 className='text-h3'>關鍵洞察</h5>
+        <h5 className='text-h3 font-h3'>關鍵洞察</h5>
       </div>
-      <p className='text-p-1'>{content}</p>
+      <p className='text-p1 font-p1'>{content}</p>
     </div>
   )
 }

@@ -82,11 +82,11 @@ const WacaProjectPage = props => {
           />
         }
         mainContent={
-          <ul className='grid grid-cols-1 md:grid-cols-3 justify-center gap-4'>
+          <ul className='grid grid-cols-1 lg:grid-cols-3 justify-center gap-10 lg:gap-4'>
             {props.problem.information.map(info => (
               <li
                 key={info.id}
-                className='flex flex-col gap-8 items-center max-w-[300px] mx-auto'
+                className='flex flex-col gap-6 lg:gap-8 items-center max-w-[300px] mx-auto'
               >
                 <div className='w-[60%] md:w-full max-w-[250px] max-h-[250px] aspect-square rounded-full border-2 border-secondary-03 flex items-center justify-center text-h2 font-h2 text-center'>
                   {info.title}
