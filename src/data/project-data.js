@@ -291,7 +291,7 @@ export const PROJECT_DATA = {
         {
           id: 'kol-info-2',
           label: '負責項目',
-          content: '競品分析、用戶訪談、UX研究、UX設計、UI介面設計、Design Guideline產出。',
+          content: '競品分析、使用者訪談、流程設計、介面設計、設計規範產出。',
           isTagType: false
         },
         {
