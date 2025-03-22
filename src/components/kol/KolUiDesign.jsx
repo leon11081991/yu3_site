@@ -40,8 +40,8 @@ const DesignImgContent = ({ infos }) => {
               >
                 <div className='flex flex-col items-center gap-1'>
                   <span dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(field) }}></span>
-                  <h4 className='text-h1 font-h1 mb-1'>{heading}</h4>
-                  <p className='text-h2 font-h2'>{subheading}</p>
+                  <h4 className='text-h3 font-h3 lg:text-h1 lg:font-h1 mb-1'>{heading}</h4>
+                  <p className='text-h3 font-h3 lg:text-h2 lg:font-h2 text-gray-04'>{subheading}</p>
                 </div>
                 {!hasSwiper && (
                   <div>
