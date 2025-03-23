@@ -34,7 +34,9 @@ const About: React.FC = () => {
               </p>
               <p className='text-p1 font-p1 text-gray-04'>
                 我始終相信，
-                <span className='font-normal'>唯有持續學習、勇於跳脫舒適圈，才能不斷成長</span>
+                <span className='text-primary-02 font-normal'>
+                  唯有持續學習、勇於跳脫舒適圈，才能不斷成長
+                </span>
                 ，讓自己變得更加精實。在 AI
                 崛起、設計工具與工作模式快速變化的時代，我期許自己能始終保持熱忱，並打造出令人愉悅、兼具美學，同時能真正解決問題的產品。
               </p>

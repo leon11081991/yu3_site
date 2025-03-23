@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 export default function TabFilter({ tabs, activeTab, setActiveTab }) {
   return (
-    <div className='flex justify-center mb-16'>
+    <div className='flex justify-center mb-6 lg:mb-16'>
       <div className='relative flex '>
         {tabs.map(tab => (
           <button

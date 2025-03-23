@@ -23,7 +23,7 @@ const ProgressBarItem = ({
       </div>
       <div className='relative w-full h-6 bg-gray-01'>
         <div
-          className={`absolute h-full ${isHighlight ? 'bg-secondary-02' : 'bg-gray-02 opacity-15'}`}
+          className={`absolute h-full ${isHighlight ? 'bg-secondary-02' : 'bg-gray-02'}`}
           style={{ width: `${percentage}%` }}
         ></div>
       </div>
