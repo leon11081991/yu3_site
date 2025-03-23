@@ -24,6 +24,18 @@
 
     --social-icon-width: 44px;
     --social-icon-height: 44px;
+
+    --sidebar-bg: rgba(91, 91, 92, 0.7);
+  }
+}
+
+@layer utilities {
+  .underline-hover-animation {
+    @apply relative after:content-[""] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[1px] after:bg-current after:scale-x-0 after:origin-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-left;
+  }
+
+  .underline-active {
+    @apply after:scale-x-100 after:origin-left;
   }
 }
 
