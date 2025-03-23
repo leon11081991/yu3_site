@@ -40,6 +40,7 @@ const DesignImgContent = ({ infos }: DesignImgContentProps) => {
                   <>
                     <SvgIcon
                       iconName='check'
+                      size={{ width: '32px', height: '32px' }}
                       svgProps={{ color: '#FFA92D' }}
                     />
                     <h4
