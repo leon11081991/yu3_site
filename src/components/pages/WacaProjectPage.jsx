@@ -20,8 +20,11 @@ const WacaProjectPage = props => {
             descriptions={props.about.descriptions}
           >
             <div className='flex bg-gray-01 rounded-lg px-6 py-2'>
-              <div className='flex w-[28px] h-[28px] items-center justify-center'>
-                <SvgIcon iconName='info' />
+              <div>
+                <SvgIcon
+                  iconName='info'
+                  size={{ width: '28px', height: '28px' }}
+                />
               </div>
               <p className='text-p1 font-p1 text-gray-04'>{props.about.notice}</p>
             </div>

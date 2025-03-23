@@ -104,6 +104,7 @@ const AnalysisConclusion = ({ content }: AnalysisConclusionProps) => {
       <div className='flex flex-col items-center gap-1'>
         <SvgIcon
           iconName='check'
+          size={{ width: '32px', height: '32px' }}
           svgProps={{ color: '#FF7B8E' }}
         />
         <h5 className='text-h3 font-h3'>關鍵洞察</h5>

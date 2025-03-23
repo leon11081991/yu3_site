@@ -25,9 +25,10 @@ const PainPointMainContent = ({ infos }: PainPointMainContentProps) => {
           </div>
 
           <div className='flex-1 lg:min-h-[161px] h-full p-6 flex flex-col gap-2 items-center bg-gray-01 rounded-lg'>
-            <div>
+            <div className='flex flex-col items-center'>
               <SvgIcon
                 iconName='check'
+                size={{ width: '32px', height: '32px' }}
                 svgProps={{ color: '#FFA92D' }}
               />
               <h5 className='text-h3 tracking-p1'>{solution.heading}</h5>
