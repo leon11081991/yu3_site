@@ -105,10 +105,11 @@ const WacaProjectPage = props => {
       <BaseSectionGrid
         topContent={
           <ContentHeader
+            className='lg:gap-6'
             title={props.designProcess.title}
             descriptions={props.designProcess.descriptions}
           >
-            <div className='-mt-10 flex gap-10'>
+            <div className='flex gap-10'>
               {props.designProcess.referenceLinks.map(link => (
                 <a
                   key={link.id}
@@ -158,10 +159,11 @@ const WacaProjectPage = props => {
       <BaseSectionGrid
         topContent={
           <ContentHeader
+            className='lg:gap-6'
             title={props.solution.title}
             descriptions={props.solution.descriptions}
           >
-            <div className='-mt-10 flex gap-10'>
+            <div className='flex gap-10'>
               {props.solution.referenceLinks.map(link => (
                 <a
                   key={link.id}
