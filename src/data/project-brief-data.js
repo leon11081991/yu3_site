@@ -20,9 +20,9 @@ export const PROJECT_BRIEF_LIST = [
     tagList: ['B2B', 'Web', 'UI'],
     type: 'product',
     cover: {
-      src: 'https://rokyokhvjqsnaargmxjb.supabase.co/storage/v1/object/sign/yu3_/image/waca/waca-cover-full.avif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJ5dTNfL2ltYWdlL3dhY2Evd2FjYS1jb3Zlci1mdWxsLmF2aWYiLCJpYXQiOjE3NDE4NTYzNDYsImV4cCI6MTc3MzM5MjM0Nn0.3xKV1QWyeTIFwU9mwo91yT67bL69l41ul_1OaC68f_g',
+      src: '/images/waca/waca-cover-full.avif',
       alt: 'WACA - 設計規範',
-      placeholderImg: '/images/waca/waca-small.avif'
+      placeholderImg: '/images/waca/waca-cover-small.avif'
     }
   },
   {

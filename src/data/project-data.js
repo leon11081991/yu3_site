@@ -907,7 +907,7 @@ export const PROJECT_DATA = {
   },
   pingo: {
     info: {
-      title: 'Pingo 美食搜集神器',
+      title: 'Pingo 美食搜集神器（Redesign）',
       information: [
         {
           id: 'pingo-info-1',
@@ -1594,7 +1594,7 @@ export const PROJECT_DATA = {
         {
           id: 'mandala-info-2',
           label: '負責項目',
-          content: '品牌視覺規劃、Sitemap繪製、UI設計、設計規範產出。',
+          content: '品牌視覺規劃、Sitemap繪製、介面設計、設計規範產出。',
           isTagType: false
         },
         {
