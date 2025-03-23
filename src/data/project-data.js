@@ -31,7 +31,7 @@ export const PROJECT_DATA = {
         {
           id: 'waca-info-5',
           label: '擔任角色',
-          content: 'UI Designer',
+          content: 'UI 設計師',
           isTagType: false
         }
       ]
@@ -303,13 +303,13 @@ export const PROJECT_DATA = {
         {
           id: 'kol-info-4',
           label: '團隊成員',
-          content: 'Lillian Lin (Yu.3_)',
+          content: '產品經理(PM) / UIUX設計師 / 前端工程師 / 後端工程師',
           isTagType: false
         },
         {
           id: 'kol-info-5',
           label: '擔任角色',
-          content: 'UI/UX Designer',
+          content: 'UI/UX 設計師',
           isTagType: false
         }
       ]
@@ -927,16 +927,16 @@ export const PROJECT_DATA = {
           content: ['APP', 'UI/UX', 'Redesign'],
           isTagType: true
         },
-        {
-          id: 'pingo-info-4',
-          label: '團隊成員',
-          content: 'Lillian Lin (Yu.3_)',
-          isTagType: false
-        },
+        // {
+        //   id: 'pingo-info-4',
+        //   label: '團隊成員',
+        //   content: 'UIUX設計師',
+        //   isTagType: false
+        // },
         {
           id: 'pingo-info-5',
           label: '擔任角色',
-          content: 'UI/UX Designer',
+          content: 'UI/UX 設計師',
           isTagType: false
         }
       ]
@@ -1462,7 +1462,7 @@ export const PROJECT_DATA = {
         {
           id: 'kai-info-5',
           label: '擔任角色',
-          content: 'UI/UX Designer',
+          content: 'UI/UX 設計師',
           isTagType: false
         }
       ]
@@ -1612,7 +1612,7 @@ export const PROJECT_DATA = {
         {
           id: 'mandala-info-5',
           label: '擔任角色',
-          content: 'UI/UX Designer',
+          content: 'UI/UX 設計師',
           isTagType: false
         }
       ]
