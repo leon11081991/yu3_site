@@ -1727,9 +1727,9 @@ export const PROJECT_DATA = {
         },
         {
           id: 2,
-          src: '/images/mandala/mandala-demo-2.png',
+          src: '/images/mandala/mandala-demo-2.avif',
           alt: '',
-          placeholder: '/images/mandala/mandala-demo-2.png',
+          placeholder: '/images/mandala/mandala-demo-2.avif',
           width: 1008,
           height: 1701,
           other: {
