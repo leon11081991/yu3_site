@@ -24,7 +24,7 @@ const ContactMe: React.FC<ContactMeProps> = ({ handleBgColor }) => {
       <a
         target='_blank'
         href='mailto:lillian.lin33@gmail.com'
-        className='text-4xl font-normal'
+        className='relative text-4xl font-normal underline-hover-animation'
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         rel='noreferrer'

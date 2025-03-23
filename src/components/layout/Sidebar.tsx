@@ -84,7 +84,7 @@ const SidebarContent: React.FC<{
             >
               <Link
                 to={item.href}
-                className={`text-p1 ${isActive(item.href) ? 'font-medium' : 'font-p1'}`}
+                className={`text-p1 underline-hover-animation ${isActive(item.href) ? 'underline-active' : ''}`}
               >
                 {item.label}
               </Link>
@@ -110,7 +110,7 @@ const Sidebar = () => {
   return (
     <motion.aside
       ref={sidebarRef}
-      className='fixed bg-gray-01 rounded-[10px] z-40 overflow-hidden'
+      className='fixed bg-[var(--sidebar-bg)] backdrop-blur-[10px] rounded-[10px] z-40 overflow-hidden'
       initial={sidebarVariants.closed}
       animate={isOpen ? sidebarVariants.open : sidebarVariants.closed}
       transition={{
