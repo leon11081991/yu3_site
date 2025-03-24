@@ -36,7 +36,7 @@ const Home = () => {
             setActiveTab={setActiveTab}
           />
 
-          <ul className='grid grid-cols-1 lg:grid-cols-2 gap-y-16 gap-x-14'>
+          <ul className='grid grid-cols-1 lg:grid-cols-2 gap-y-10 lg:gap-y-16 gap-x-14'>
             {filteredProjects.map(project => (
               <ProjectCard
                 key={project.id}
