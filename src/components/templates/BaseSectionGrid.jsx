@@ -1,13 +1,19 @@
 import PropTypes from 'prop-types'
 import ContentContainer from '@/layouts/ContentContainer'
 
-const BaseSectionGrid = ({ topContent, mainContent, hasDivider = true, noPb = false }) => {
+const BaseSectionGrid = ({
+  topContent,
+  mainContent,
+  hasDivider = true,
+  noPb = false,
+  innerClassName = ''
+}) => {
   return (
     <ContentContainer>
       <section
         className={`section-container ${hasDivider ? 'with-divider' : ''} ${noPb ? 'pb-0' : ''}`}
       >
-        <div className='section-container-inner'>
+        <div className={`section-container-inner ${innerClassName}`}>
           {topContent && <BaseSectionTop>{topContent}</BaseSectionTop>}
           {mainContent && <BaseSectionContent>{mainContent}</BaseSectionContent>}
         </div>
@@ -20,7 +26,8 @@ BaseSectionGrid.propTypes = {
   topContent: PropTypes.node.isRequired,
   mainContent: PropTypes.node,
   hasDivider: PropTypes.bool,
-  noPb: PropTypes.bool
+  noPb: PropTypes.bool,
+  innerClassName: PropTypes.string
 }
 
 const BaseSectionTop = ({ children }) => {

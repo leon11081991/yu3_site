@@ -6,7 +6,7 @@ const ProjectDemoVideo = ({ videoSrc, videoLabel }) => {
   return (
     <ContentContainer className='bg-gray-01'>
       <section className='w-full bg-gray-01'>
-        <div className='mt-36 mb-36 w-[71%] mx-auto'>
+        <div className='mt-10 mb-10 lg:mt-36 lg:mb-36 w-[71%] mx-auto'>
           <BaseVideo
             videoSrc={videoSrc}
             videoLabel={videoLabel}

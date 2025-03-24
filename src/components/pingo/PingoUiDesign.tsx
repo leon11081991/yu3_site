@@ -33,7 +33,7 @@ const DesignImgContent = ({ infos }: DesignImgContentProps) => {
             className={hasBgColor ? 'bg-gray-01' : ''}
           >
             <section
-              className={`${isFirst ? '' : 'pt-[var(--section-padding-y--mobile)] lg:pt-[var(--section-padding-y)]'} ${noPaddingButton ? '' : 'pb-[var(--section-padding-y--mobile)] lg:pb-[var(--section-padding-y)]'} ${isLast ? 'with-divider' : ''} flex flex-col gap-10`}
+              className={`${isFirst ? '' : 'pt-[var(--section-padding-y--mobile)] lg:pt-[var(--section-padding-y)]'} ${noPaddingButton ? '' : 'pb-[var(--section-padding-y--mobile)] lg:pb-[var(--section-padding-y)]'} ${isLast ? 'with-divider' : ''} flex flex-col gap-6 lg:gap-10`}
             >
               <div className='flex flex-col items-center gap-2'>
                 {heading && (

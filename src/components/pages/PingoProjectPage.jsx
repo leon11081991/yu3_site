@@ -38,7 +38,7 @@ const PingoProjectPage = props => {
           >
             <div className='flex flex-col gap-16'>
               <ResearchBarChartList sources={props.backgroundResearch.dataSources} />
-              <ul className='flex flex-col gap-8'>
+              <ul className='flex flex-col gap-6 lg:gap-8'>
                 {props.backgroundResearch.information.map(item => (
                   <TextWithTitle
                     key={item.label}
@@ -206,6 +206,7 @@ const PingoProjectPage = props => {
             </ul>
           </ContentHeader>
         }
+        hasDivider={false}
       />
     </>
   )

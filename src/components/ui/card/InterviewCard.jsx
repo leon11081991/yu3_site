@@ -6,7 +6,7 @@ const InterviewCard = ({ interview }) => {
       {/* Position */}
       <div className='flex-grow-0 flex flex-col items-center'>
         <h5 className='px-3 text-p1 font-p1 bg-gray-02 rounded-lg mb-4'>{interview.character}</h5>
-        <p className='text-h3 font-h3 text-center min-h-[50px]'>“ {interview.comment}”</p>
+        <p className='text-h3 font-h3 text-center min-h-[24px]'>“ {interview.comment}”</p>
       </div>
 
       <div className='flex-1 flex flex-col items-center justify-between h-full'>

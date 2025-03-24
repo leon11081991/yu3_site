@@ -134,6 +134,7 @@ const WacaProjectPage = props => {
             ))}
           </div>
         }
+        innerClassName='gap-16'
       />
 
       {/* 遇到的困難 / Issue */}
@@ -190,6 +191,7 @@ const WacaProjectPage = props => {
         }
         hasDivider={false}
         noPb={true}
+        innerClassName='gap-16'
       />
 
       {/* 設計成果 / Design Results */}
@@ -230,6 +232,7 @@ const WacaProjectPage = props => {
             </ul>
           </ContentHeader>
         }
+        hasDivider={false}
       />
     </>
   )

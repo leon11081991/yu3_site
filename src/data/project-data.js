@@ -241,7 +241,7 @@ export const PROJECT_DATA = {
         {
           id: 'waca-solution-Opt-1',
           isOptimized: true,
-          title: '優化後',
+          title: '最終版',
           image: {
             src: '/images/waca/waca-designProcess-4.avif',
             alt: 'WACA 專案流程',

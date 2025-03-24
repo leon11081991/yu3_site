@@ -11,7 +11,7 @@ interface ContentHeaderProps {
 const ContentHeader = ({ title, descriptions, className = '', children }: ContentHeaderProps) => {
   return (
     <>
-      <h3 className='heading-3'>{title}</h3>
+      <h3 className='heading-2'>{title}</h3>
       {(descriptions || children) && (
         <div className={`${children ? 'flex flex-col gap-6 lg:gap-16' : ''} ${className}`}>
           {descriptions && <DescriptionBlock descriptions={descriptions} />}

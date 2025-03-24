@@ -6,7 +6,7 @@ import BlurLazyImage from '@/components/ui/image/BlurLazyImage'
 const FlowChartHeader = ({ title, des, indicator }) => {
   return (
     <div className='grid gap-6 grid-cols-1 lg:grid-cols-2'>
-      <div className='flex flex-col gap-16'>
+      <div className='flex flex-col gap-6 lg:gap-16'>
         <ContentHeader
           title={title}
           descriptions={des}
@@ -60,7 +60,7 @@ const PingoFlowChart = ({ title, descriptions, indicator, information }) => {
   return (
     <ContentContainer>
       <section className='section-container with-divider'>
-        <div className='section-container-inner'>
+        <div className='section-container-inner gap-[40px]'>
           <FlowChartHeader
             title={title}
             des={descriptions}
