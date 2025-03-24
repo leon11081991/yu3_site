@@ -5,7 +5,7 @@ import BlurLazyImage from '@/components/ui/image/BlurLazyImage'
 const ImageDemonstrationPure = ({ image }) => {
   return (
     <ContentContainer className={image.other.bgColorStyle}>
-      <div className={`mt-36 mb-36 mx-auto ${image.other.widthStyle}`}>
+      <div className={`mt-10 mb-10 lg:mt-36 lg:mb-36 mx-auto ${image.other.widthStyle}`}>
         <BlurLazyImage
           src={image.src}
           alt={image.alt}

@@ -1,17 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useSidebar } from '@/shared/contexts/SidebarContext'
-
+import useTemporaryHoverEffect from '@/shared/hooks/useTemporaryHoverEffect'
 interface HeaderProps {
   appName: string
 }
 
 const Header: React.FC<HeaderProps> = ({ appName }) => {
   const { isOpen, setIsOpen } = useSidebar()
+  const { removeHoverEffect } = useTemporaryHoverEffect({ className: 'hover:bg-gray-02' })
 
   const handleHamburgerClick = (event: React.MouseEvent<HTMLDivElement>) => {
     event.stopPropagation()
     setIsOpen(prevState => !prevState)
+    removeHoverEffect(event.currentTarget as HTMLElement)
   }
 
   return (

@@ -174,6 +174,7 @@ const KolProjectPage = props => (
           </ul>
         </ContentHeader>
       }
+      hasDivider={false}
     />
   </>
 )
