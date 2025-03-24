@@ -59,7 +59,7 @@ const KolProjectPage = props => (
         />
       }
       mainContent={
-        <ul className='grid grid-cols-1 lg:grid-cols-3 gap-[5.7%]'>
+        <ul className='grid grid-cols-1 lg:grid-cols-3 gap-10 lg:gap-[5.7%]'>
           {props.interview.interviewList.map(interview => (
             <InterviewCard
               key={interview.id}
