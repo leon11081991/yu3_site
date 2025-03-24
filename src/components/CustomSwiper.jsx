@@ -1,40 +1,43 @@
 import PropTypes from 'prop-types'
-import { useState, useRef } from 'react'
+import { useRef, useReducer } from 'react'
 import SvgIcon from '@/components/ui/SvgIcon'
 
 const CustomSwiper = ({ images }) => {
   const currentIndexRef = useRef(0)
-  const [, forceUpdate] = useState(0)
+  const [, forceUpdate] = useReducer(x => x + 1, 0)
 
   const prevSlide = () => {
     currentIndexRef.current =
       currentIndexRef.current === 0 ? images.length - 1 : currentIndexRef.current - 1
-    forceUpdate(prev => prev - 1)
+    forceUpdate()
   }
 
   const nextSlide = () => {
     currentIndexRef.current = (currentIndexRef.current + 1) % images.length
-    forceUpdate(prev => prev + 1)
+    forceUpdate()
   }
 
   const goToSlide = index => {
     console.log('goToSlide', index)
     currentIndexRef.current = index
-    forceUpdate(prev => prev + 1)
+    forceUpdate()
   }
 
   const currentImage = images[currentIndexRef.current] || {}
 
   return (
     // Swiper容器
-    <div className='w-full max-w-3xl mx-auto'>
+    <div className='w-full mx-auto'>
       <div className='relative'>
         {/* 往前一張按鈕 */}
         <div
           onClick={prevSlide}
-          className='absolute left-0 top-1/2 -translate-y-1/2 rotate-180 w-[40px] h-[40px] flex items-center justify-center rounded-full transition cursor-pointer hover:bg-gray-02'
+          className='absolute -left-3 lg:left-0 top-1/2 -translate-y-1/2 rotate-180 w-[40px] h-[40px] flex items-center justify-center rounded-full transition cursor-pointer hover:bg-gray-02'
         >
-          <SvgIcon iconName='arrowRight' />
+          <SvgIcon
+            iconName='arrowRight'
+            size={{ width: 32, height: 32 }}
+          />
         </div>
 
         {/* 展示畫面 */}
@@ -42,15 +45,18 @@ const CustomSwiper = ({ images }) => {
           loading='lazy'
           src={currentImage.src}
           alt={`Slide ${currentImage + 1}`}
-          className='w-[88%] mx-auto h-auto rounded-lg shadow-lg transition-all duration-500'
+          className='w-full mx-auto h-auto rounded-lg shadow-lg transition-all duration-500'
         />
 
         {/* 往下一張按鈕 */}
         <div
           onClick={nextSlide}
-          className='absolute right-0 top-1/2 -translate-y-1/2 w-[40px] h-[40px] flex items-center justify-center rounded-full transition cursor-pointer hover:bg-gray-02'
+          className='absolute -right-3 lg:right-0 top-1/2 -translate-y-1/2 w-[40px] h-[40px] flex items-center justify-center rounded-full transition cursor-pointer hover:bg-gray-02'
         >
-          <SvgIcon iconName='arrowRight' />
+          <SvgIcon
+            iconName='arrowRight'
+            size={{ width: 32, height: 32 }}
+          />
         </div>
       </div>
 
