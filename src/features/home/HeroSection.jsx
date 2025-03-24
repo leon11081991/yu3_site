@@ -18,7 +18,10 @@ const HeroSectionFooter = () => {
         className='hover:bg-gray-02 rounded-full transition-all cursor-pointer'
         onClick={() => scrollToSection('project-list')}
       >
-        <SvgIcon iconName='arrow' />
+        <SvgIcon
+          iconName='arrow'
+          size={{ width: 50, height: 50 }}
+        />
       </div>
     </div>
   )
