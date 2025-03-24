@@ -10,7 +10,7 @@ const InterviewCard = ({ interview }) => {
       </div>
 
       <div className='flex-1 flex flex-col items-center justify-between h-full'>
-        <div className='relative flex-1 mb-14 flex flex-col items-center after:content-normal after:absolute after:-bottom-7 after:left-1/2 after:transform after:-translate-x-1/2 after:border-l-[6px] after:border-r-[6px] after:border-t-[10px] after:border-t-secondary-04 after:border-l-transparent after:border-r-transparent '>
+        <div className='relative flex-1 mb-14 flex flex-col items-center after:content-normal after:absolute after:-bottom-8 after:left-1/2 after:transform after:-translate-x-1/2 after:border-l-[6px] after:border-r-[6px] after:border-t-[10px] after:border-t-secondary-04 after:border-l-transparent after:border-r-transparent '>
           {/* Avatar image */}
           <div className='block w-[120px] h-[120px] -z-10'>
             <img
