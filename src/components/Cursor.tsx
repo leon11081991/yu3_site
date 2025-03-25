@@ -19,6 +19,7 @@ const Cursor: React.FC = () => {
     width: `${cursorState.size}px`,
     height: `${cursorState.size}px`,
     backgroundColor: cursorState.color,
+    fontWeight: cursorState?.fontWeight || 400,
     borderRadius: '50%',
     display: 'flex',
     alignItems: 'center',

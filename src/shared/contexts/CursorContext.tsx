@@ -11,6 +11,7 @@ interface CursorState {
   size?: number
   color?: string
   variant?: string
+  [key: string]: any
 }
 
 type CursorAction = 'enter' | 'leave'
