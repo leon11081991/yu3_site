@@ -37,7 +37,8 @@ export default {
         h3: ['.875rem', '1rem'],
         h4: ['.875rem', '2rem'],
         p1: ['.875rem', '1.75rem'],
-        p2: ['.75rem', '1.125rem']
+        p2: ['.75rem', '1.125rem'],
+        btn: ['.875rem', '1.5rem']
       },
       fontWeight: {
         h1: '400',
