@@ -4,14 +4,23 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useSidebar } from '@/shared/contexts/SidebarContext'
 import { useClickOutside } from '@/shared/hooks/useClickOutside'
 
-const MENU_ITEMS: { label: string; href: string }[] = [
+type LinkType = 'internal' | 'external'
+
+const MENU_ITEMS: { label: string; href: string; type: LinkType }[] = [
   {
     label: '首頁/Home',
-    href: '/'
+    href: '/',
+    type: 'internal'
   },
   {
     label: '關於我/About',
-    href: '/about'
+    href: '/about',
+    type: 'internal'
+  },
+  {
+    label: '履歷/Resume',
+    href: 'https://drive.google.com/file/d/1U-p50hk4WVlXSE-aHB_xv5JOr2bXF2Lo/view?usp=sharing',
+    type: 'external'
   }
 ]
 
@@ -82,12 +91,23 @@ const SidebarContent: React.FC<{
               key={item.href}
               onClick={() => setIsOpen(false)}
             >
-              <Link
-                to={item.href}
-                className={`text-p1 underline-hover-animation ${isActive(item.href) ? 'underline-active' : ''}`}
-              >
-                {item.label}
-              </Link>
+              {item.type === 'internal' ? (
+                <Link
+                  to={item.href}
+                  className={`text-p1 underline-hover-animation ${isActive(item.href) ? 'underline-active' : ''}`}
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <a
+                  href={item.href}
+                  className='text-p1 underline-hover-animation'
+                  target='_blank'
+                  rel='noopener noreferrer'
+                >
+                  {item.label}
+                </a>
+              )}
             </li>
           ))}
         </ul>
