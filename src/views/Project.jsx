@@ -1,5 +1,6 @@
 import { Suspense, lazy } from 'react'
 import { useParams } from 'react-router-dom'
+import { useNavigation } from '@/shared/hooks/useNavigation'
 
 import { BANNER_DATA } from '@/data/banner-data'
 import { PROJECT_DATA } from '@/data/project-data'
@@ -14,6 +15,7 @@ const PAGE_COMPONENTS = {
 }
 const NotFound = lazy(() => import('@/views/NotFound'))
 const ProjectBanner = lazy(() => import('@/components/ProjectBanner'))
+const Button = lazy(() => import('@/components/ui/Button'))
 
 // 定義 Banner 圖片尺寸
 const BANNER_SIZE = {
@@ -23,6 +25,7 @@ const BANNER_SIZE = {
 
 const Project = () => {
   const { projectName } = useParams()
+  const { navigateByStep } = useNavigation()
 
   // 檢查是否為有效的 projectName
   const isValidProject = projectName in PAGE_COMPONENTS
@@ -38,6 +41,13 @@ const Project = () => {
         width={BANNER_SIZE.width}
         height={BANNER_SIZE.height}
       />
+      <Button
+        className='hidden lg:flex static lg:sticky top-20 left-[var(--main-content-padding-x--mobile)] lg:left-[var(--main-content-padding-x)]'
+        hasIcon={true}
+        onClick={() => navigateByStep(-1)}
+      >
+        <span className='text-btn'>返回</span>
+      </Button>
       <Suspense fallback={<div>Loading...</div>}>
         <SelectedProjectPage {...(isValidProject ? PROJECT_DATA[projectName] : {})} />
       </Suspense>

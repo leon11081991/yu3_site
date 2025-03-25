@@ -21,7 +21,12 @@ const ProjectCard = ({ name, title, category, cover, tagList }: CardProps) => {
     <li
       className='gap-6 cursor-pointer'
       onMouseEnter={() =>
-        handleCursor('enter', { text: 'View', size: 100, color: 'rgba(0,0,0,0.3)' })
+        handleCursor('enter', {
+          text: 'View',
+          size: 100,
+          color: 'rgba(0,0,0,0.3)',
+          fontWeight: 700
+        })
       }
       onMouseLeave={() => handleCursor('leave')}
     >

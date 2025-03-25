@@ -4,7 +4,7 @@ import ContentContainer from '@/layouts/ContentContainer'
 import TagList from '@/components/molecules/TagList'
 
 const ProjectInfoContent = ({ title, information }) => (
-  <section className='py-[var(--section-padding-y--mobile)] lg:py-[var(--section-padding-y)] border-b-[1px] border-gray-02'>
+  <section className='pt-[var(--section-padding-y--mobile)] lg:pt-6 pb-[var(--section-padding-y--mobile)] lg:pb-[var(--section-padding-y)] border-b-[1px] border-gray-02'>
     <h2 className='mb-6 lg:mb-10 text-[20px] tracking-[1px] lg:heading-1 font-h1'>{title}</h2>
     <ul className='two-cols-container'>
       {information.map(item => (

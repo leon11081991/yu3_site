@@ -31,7 +31,7 @@ const HeroSection = () => {
   return (
     <section className='mx-[var(--main-content-padding-x--mobile)] lg:mx-[var(--main-content-padding-x)] h-[calc(100dvh-80px)] flex flex-col with-divider'>
       <div className='flex-1 flex flex-col md:flex-row items-center justify-center gap-10'>
-        <div className='min-w-[222px] w-[22.2%] max-w-[300px]'>
+        <div className='md:-mt-20 min-w-[222px] w-[22.2%] max-w-[300px]'>
           <BlurLazyImage
             src='/images/hero-image.avif'
             alt='Hero Image'
@@ -41,7 +41,7 @@ const HeroSection = () => {
           />
         </div>
 
-        <div className='flex flex-col items-center md:items-start gap-4'>
+        <div className='md:-mt-20 flex flex-col items-center md:items-start gap-4'>
           <p className='text-[20px] font-normal'>Hello I’m Lillian Lin</p>
           <p className='text-h2 font-h2 text-gray-03'>UI/UX Designer</p>
         </div>

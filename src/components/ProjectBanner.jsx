@@ -5,7 +5,7 @@ import styles from '@/styles/components/ProjectBanner.module.scss'
 
 const ProjectBanner = ({ src, alt, placeholder, width, height }) => {
   return (
-    <div className={styles.projectBanner}>
+    <div className={`md:pb-10 ${styles.projectBanner}`}>
       <BlurLazyImage
         src={src}
         alt={`${alt} Banner`}
