@@ -19,7 +19,7 @@ const Header: React.FC<HeaderProps> = ({ appName }) => {
   return (
     <header className='sticky top-0 px-[var(--main-content-padding-x--mobile)] lg:px-[var(--main-content-padding-x)] flex justify-between items-center h-[var(--header-height)] z-50'>
       <div>
-        <h1 className='text-logo tracking-logo font-bold'>
+        <h1 className='text-logo tracking-logo font-semibold'>
           <Link to='/'>{appName}</Link>
         </h1>
       </div>
@@ -30,10 +30,10 @@ const Header: React.FC<HeaderProps> = ({ appName }) => {
       >
         <div className='relative p-2 w-8 h-8'>
           <span
-            className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 block w-[14px] h-[2px] rounded-sm bg-primary-02 transition-all duration-300 ${isOpen ? 'rotate-45 -translate-y-1/2' : '-translate-y-1'}`}
+            className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 block w-[14px] h-[1.5px] rounded-sm bg-primary-02 transition-all duration-300 ${isOpen ? 'rotate-45 -translate-y-1/2' : '-translate-y-1'}`}
           ></span>
           <span
-            className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 block w-[14px] h-[2px] rounded-sm bg-primary-02 transition-all duration-300 ${isOpen ? '-rotate-45' : 'translate-y-1'}`}
+            className={`absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 block w-[14px] h-[1.5px] rounded-sm bg-primary-02 transition-all duration-300 ${isOpen ? '-rotate-45' : 'translate-y-1'}`}
           ></span>
         </div>
       </div>
