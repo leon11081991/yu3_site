@@ -1,12 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useSidebar } from '@/shared/contexts/SidebarContext'
+import SvgIcon from '@/components/ui/SvgIcon'
 import useTemporaryHoverEffect from '@/shared/hooks/useTemporaryHoverEffect'
-interface HeaderProps {
-  appName: string
-}
 
-const Header: React.FC<HeaderProps> = ({ appName }) => {
+const Header: React.FC = () => {
   const { isOpen, setIsOpen } = useSidebar()
   const { removeHoverEffect } = useTemporaryHoverEffect({ className: 'hover:bg-gray-02' })
 
@@ -19,9 +17,14 @@ const Header: React.FC<HeaderProps> = ({ appName }) => {
   return (
     <header className='sticky top-0 px-[var(--main-content-padding-x--mobile)] lg:px-[var(--main-content-padding-x)] flex justify-between items-center h-[var(--header-height)] z-50'>
       <div>
-        <h1 className='text-logo tracking-logo font-semibold'>
-          <Link to='/'>{appName}</Link>
-        </h1>
+        {/* <h1 className='text-logo tracking-logo font-semibold'> */}
+        <Link to='/'>
+          <SvgIcon
+            iconName='logo'
+            size={{ width: '44px', height: '14px' }}
+          />
+        </Link>
+        {/* </h1> */}
       </div>
 
       <div

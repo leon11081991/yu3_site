@@ -671,197 +671,206 @@ export const PROJECT_DATA = {
       information: [
         {
           id: 'kol-uiDesign-info-1',
-          field: '<span class="text-secondary-04">Home</span>',
-          heading: '產品首頁',
-          subheading: '初次來到產品首頁，有清晰的用戶引導',
           hasBgColor: false,
-          hasSwiper: false,
-          associateWithNext: false,
-          associateWithPrev: false,
-          images: [
+          content: [
             {
-              id: 'uiDesign-img-1',
-              src: '/images/kol/kol-design-1.avif',
-              alt: 'Kol產品首頁精稿圖',
-              placeholder: '/images/kol/kol-design-1.avif',
-              width: 1048,
-              height: 442
+              id: 'kol-uiDesign-info-content-1',
+              field: '<span class="text-secondary-04">Home</span>',
+              heading: '產品首頁',
+              subheading: '初次來到產品首頁，有清晰的用戶引導',
+              hasSwiper: false,
+              associateWithNext: false,
+              associateWithPrev: false,
+              images: [
+                {
+                  id: 'uiDesign-img-1',
+                  src: '/images/kol/kol-design-1.avif',
+                  alt: 'Kol產品首頁精稿圖',
+                  placeholder: '/images/kol/kol-design-1.avif',
+                  width: 1048,
+                  height: 442
+                }
+              ]
+            },
+            {
+              id: 'kol-uiDesign-info-content-2',
+              field: '<span class="text-secondary-04">Search</span>',
+              heading: '網紅搜尋',
+              subheading: '直觀的搜尋欄，輕鬆查找匹配網紅',
+              hasSwiper: false,
+              associateWithNext: false,
+              associateWithPrev: false,
+              images: [
+                {
+                  id: 'uiDesign-img-2',
+                  src: '/images/kol/kol-design-2.avif',
+                  alt: 'Kol網紅搜尋精稿圖',
+                  placeholder: '/images/kol/kol-design-2.avif',
+                  width: 988,
+                  height: 410
+                }
+              ]
+            },
+            {
+              id: 'kol-uiDesign-info-content-3',
+              field: '<span class="text-secondary-04">Influencer</span>',
+              heading: '網紅檔案',
+              subheading: '資訊層級分明，數據視覺化呈現',
+              hasSwiper: false,
+              associateWithNext: false,
+              associateWithPrev: false,
+              images: [
+                {
+                  id: 'uiDesign-img-3',
+                  src: '/images/kol/kol-design-3.avif',
+                  alt: 'Kol網紅檔案精稿圖',
+                  placeholder: '/images/kol/kol-design-3.avif',
+                  width: 988,
+                  height: 773
+                }
+              ]
+            },
+            {
+              id: 'kol-uiDesign-info-content-3',
+              field: '<span class="text-secondary-04">Project</span>',
+              heading: '我的專案',
+              subheading: '一目了然的專案管理列表',
+              hasSwiper: false,
+              associateWithNext: true,
+              associateWithPrev: false,
+              images: [
+                {
+                  id: 'uiDesign-img-4',
+                  src: '/images/kol/kol-design-4.avif',
+                  alt: 'Kol我的專案精稿圖',
+                  placeholder: '/images/kol/kol-design-4.avif',
+                  width: 1096,
+                  height: 473
+                }
+              ]
+            },
+            {
+              id: 'kol-uiDesign-info-content-3',
+              field: '<span class="text-secondary-04">Create</span>',
+              heading: '建立專案',
+              subheading: '步驟式流程表單，降低認知負擔',
+              hasSwiper: true,
+              associateWithNext: false,
+              associateWithPrev: true,
+              images: [
+                {
+                  id: 'uiDesign-img-5',
+                  src: '/images/kol/kol-design-5.avif',
+                  alt: 'Kol建立專案1',
+                  placeholder: '/images/kol/kol-design-5.avif',
+                  width: 988,
+                  height: 350
+                },
+                {
+                  id: 'uiDesign-img-6',
+                  src: '/images/kol/kol-design-6.avif',
+                  alt: 'Kol建立專案2',
+                  placeholder: '/images/kol/kol-design-6.avif',
+                  width: 988,
+                  height: 350
+                },
+                {
+                  id: 'uiDesign-img-7',
+                  src: '/images/kol/kol-design-7.avif',
+                  alt: 'Kol建立專案3',
+                  placeholder: '/images/kol/kol-design-7.avif',
+                  width: 988,
+                  height: 350
+                }
+              ]
             }
           ]
         },
         {
           id: 'kol-uiDesign-info-2',
-          field: '<span class="text-secondary-04">Search</span>',
-          heading: ' 網紅搜尋',
-          subheading: '直觀的搜尋欄，輕鬆查找匹配網紅',
-          hasBgColor: false,
-          hasSwiper: false,
-          associateWithNext: false,
-          associateWithPrev: false,
-          images: [
+          hasBgColor: true,
+          content: [
             {
-              id: 'uiDesign-img-2',
-              src: '/images/kol/kol-design-2.avif',
-              alt: 'Kol網紅搜尋精稿圖',
-              placeholder: '/images/kol/kol-design-2.avif',
-              width: 988,
-              height: 410
+              id: 'kol-uiDesign-info-content-2-1',
+              field: '<span class="text-secondary-04">Search</span>',
+              heading: '案件搜尋',
+              subheading: '創作者可快速篩選、瀏覽廣告主刊登的合作案件',
+              hasSwiper: false,
+              associateWithNext: false,
+              associateWithPrev: false,
+              images: [
+                {
+                  id: 'kol-uiDesign-img-8',
+                  src: '/images/kol/kol-design-8.avif',
+                  alt: 'Kol案件搜尋精稿圖',
+                  placeholder: '/images/kol/kol-design-8.avif',
+                  width: 988,
+                  height: 410
+                }
+              ]
+            },
+            {
+              id: 'kol-uiDesign-info-content-2-2',
+              field: '<span class="text-secondary-04">Information</span>',
+              heading: '案件詳情頁',
+              subheading: '詳細說明合作內容細項，並提供報名按鈕',
+              hasSwiper: false,
+              associateWithNext: false,
+              associateWithPrev: false,
+              images: [
+                {
+                  id: 'uiDesign-img-9',
+                  src: '/images/kol/kol-design-9.avif',
+                  alt: 'Kol案件詳情頁精稿圖',
+                  placeholder: '/images/kol/kol-design-9.avif',
+                  width: 988,
+                  height: 830
+                }
+              ]
             }
           ]
         },
         {
           id: 'kol-uiDesign-info-3',
-          field: '<span class="text-secondary-04">Influencer</span>',
-          heading: '網紅檔案',
-          subheading: '資訊層級分明，數據視覺化呈現',
           hasBgColor: false,
-          hasSwiper: false,
-          associateWithNext: false,
-          associateWithPrev: false,
-          images: [
+          content: [
             {
-              id: 'uiDesign-img-3',
-              src: '/images/kol/kol-design-3.avif',
-              alt: 'Kol網紅檔案精稿圖',
-              placeholder: '/images/kol/kol-design-3.avif',
-              width: 988,
-              height: 773
-            }
-          ]
-        },
-        {
-          id: 'kol-uiDesign-info-4',
-          field: '<span class="text-secondary-04">Project</span>',
-          heading: '我的專案',
-          subheading: '一目了然的專案管理列表',
-          hasBgColor: false,
-          hasSwiper: false,
-          associateWithNext: true,
-          associateWithPrev: false,
-          images: [
-            {
-              id: 'uiDesign-img-4',
-              src: '/images/kol/kol-design-4.avif',
-              alt: 'Kol我的專案精稿圖',
-              placeholder: '/images/kol/kol-design-4.avif',
-              width: 1096,
-              height: 473
-            }
-          ]
-        },
-        {
-          id: 'uiDesign-info-5',
-          field: '<span class="text-secondary-04">Creat</span>',
-          heading: '建立專案',
-          subheading: '步驟式流程表單，降低認知負擔',
-          hasBgColor: false,
-          hasSwiper: true,
-          associateWithNext: false,
-          associateWithPrev: true,
-          images: [
-            {
-              id: 'uiDesign-img-5',
-              src: '/images/kol/kol-design-5.avif',
-              alt: 'Kol建立專案1',
-              placeholder: '/images/kol/kol-design-5.avif',
-              width: 988,
-              height: 350
+              id: 'kol-uiDesign-info-content-3-1',
+              field: '<span class="text-secondary-04">Browsing</span>',
+              heading: 'KOL報名列表',
+              subheading: '快速管理合作專案KOL人選',
+              hasSwiper: false,
+              associateWithNext: true,
+              associateWithPrev: false,
+              images: [
+                {
+                  id: 'kol-uiDesign-img-10',
+                  src: '/images/kol/kol-design-10.avif',
+                  alt: 'KOL報名列表精稿圖',
+                  placeholder: '/images/kol/kol-design-10.avif',
+                  width: 988,
+                  height: 488
+                }
+              ]
             },
             {
-              id: 'uiDesign-img-6',
-              src: '/images/kol/kol-design-6.avif',
-              alt: 'Kol建立專案2',
-              placeholder: '/images/kol/kol-design-6.avif',
-              width: 988,
-              height: 350
-            },
-            {
-              id: 'uiDesign-img-7',
-              src: '/images/kol/kol-design-7.avif',
-              alt: 'Kol建立專案3',
-              placeholder: '/images/kol/kol-design-7.avif',
-              width: 988,
-              height: 350
-            }
-          ]
-        },
-        {
-          id: 'kol-uiDesign-info-5',
-          field: '<span class="text-secondary-04">Search</span>',
-          heading: '案件搜尋',
-          subheading: '創作者可快速篩選、瀏覽廣告主刊登的合作案件',
-          hasBgColor: true,
-          hasSwiper: false,
-          associateWithNext: false,
-          associateWithPrev: false,
-          images: [
-            {
-              id: 'kol-uiDesign-img-8',
-              src: '/images/kol/kol-design-8.avif',
-              alt: 'Kol案件搜尋精稿圖',
-              placeholder: '/images/kol/kol-design-8.avif',
-              width: 988,
-              height: 410
-            }
-          ]
-        },
-        {
-          id: 'kol-uiDesign-info-6',
-          field: '<span class="text-secondary-04">Information</span>',
-          heading: '案件詳情頁',
-          subheading: '詳細說明合作內容細項，並提供報名按鈕',
-          hasBgColor: true,
-          hasSwiper: false,
-          associateWithNext: false,
-          associateWithPrev: false,
-          images: [
-            {
-              id: 'uiDesign-img-9',
-              src: '/images/kol/kol-design-9.avif',
-              alt: 'Kol案件詳情頁精稿圖',
-              placeholder: '/images/kol/kol-design-9.avif',
-              width: 988,
-              height: 830
-            }
-          ]
-        },
-        {
-          id: 'kol-uiDesign-info-7',
-          field: '<span class="text-secondary-04">Browsing</span>',
-          heading: 'KOL報名列表',
-          subheading: '快速管理合作專案KOL人選',
-          hasBgColor: false,
-          hasSwiper: false,
-          associateWithNext: true,
-          associateWithPrev: false,
-          images: [
-            {
-              id: 'kol-uiDesign-img-10',
-              src: '/images/kol/kol-design-10.avif',
-              alt: 'KOL報名列表精稿圖',
-              placeholder: '/images/kol/kol-design-10.avif',
-              width: 988,
-              height: 488
-            }
-          ]
-        },
-        {
-          id: 'kol-uiDesign-info-8',
-          field: '<span class="text-secondary-04">Message</span>',
-          heading: '我的訊息',
-          subheading: '提供廣告主與創作者間的溝通管道',
-          hasBgColor: false,
-          hasSwiper: false,
-          associateWithNext: false,
-          associateWithPrev: true,
-          images: [
-            {
-              id: 'kol-uiDesign-img-11',
-              src: '/images/kol/kol-design-11.avif',
-              alt: 'KOL我的訊息精稿圖',
-              placeholder: '/images/kol/kol-design-11.avif',
-              width: 988,
-              height: 387
+              id: 'kol-uiDesign-info-content-3-2',
+              field: '<span class="text-secondary-04">Message</span>',
+              heading: '我的訊息',
+              subheading: '提供廣告主與創作者間的溝通管道',
+              hasSwiper: false,
+              associateWithNext: false,
+              associateWithPrev: true,
+              images: [
+                {
+                  id: 'kol-uiDesign-img-11',
+                  src: '/images/kol/kol-design-11.avif',
+                  alt: 'KOL我的訊息精稿圖',
+                  placeholder: '/images/kol/kol-design-11.avif',
+                  width: 988,
+                  height: 387
+                }
+              ]
             }
           ]
         }

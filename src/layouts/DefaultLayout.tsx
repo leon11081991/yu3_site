@@ -33,7 +33,7 @@ const DefaultLayout = () => {
 
   return (
     <AppContextProvider>
-      <Header appName={APP_NAME} />
+      <Header />
       <Sidebar />
       <Outlet />
       <Footer />
