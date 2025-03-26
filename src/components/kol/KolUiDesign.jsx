@@ -6,64 +6,65 @@ import ContentHeader from '@/components/molecules/ContentHeader'
 import BlurLazyImage from '@/components/ui/image/BlurLazyImage'
 import CustomSwiper from '@/components/CustomSwiper'
 
-const DesignImgContent = ({ infos }) => {
+const DesignContent = ({ field, heading, subheading, hasSwiper, images, className }) => {
+  return (
+    <section className={`flex flex-col gap-6 lg:gap-10 ${className}`}>
+      <div className='flex flex-col items-center gap-1'>
+        <span dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(field) }}></span>
+        <h4 className='text-h3 font-h3 lg:text-h1 lg:font-h1 mb-1'>{heading}</h4>
+        <p className='text-h3 font-h3 lg:text-h2 lg:font-h2 text-gray-04'>{subheading}</p>
+      </div>
+      {!hasSwiper && (
+        <div>
+          {images.map(img => (
+            <BlurLazyImage
+              key={img.id}
+              src={img.src}
+              alt={img.alt}
+              placeholder={img.placeholder}
+              width={img.width}
+              height={img.height}
+            />
+          ))}
+        </div>
+      )}
+
+      {hasSwiper && <CustomSwiper images={images} />}
+    </section>
+  )
+}
+
+const DesignImgContent = ({ infos, firstContent, lastContent }) => {
   return (
     <div>
-      {infos.map(
-        (
-          {
-            id,
-            field,
-            heading,
-            subheading,
-            hasBgColor,
-            hasSwiper,
-            associateWithNext,
-            associateWithPrev,
-            images
-          },
-          index
-        ) => {
-          const isFirst = index === 0
-          const isLast = index === infos.length - 1
-          const stylePaddingTop = isFirst || associateWithPrev ? '' : 'pt-[72px]'
-          const stylePaddingBottom = associateWithNext ? 'pb-[24px]' : 'pb-[72px]'
-          const styleDividerClass = isLast ? 'with-divider' : ''
+      {infos.map(({ id, hasBgColor, content }) => {
+        return (
+          <ContentContainer
+            key={id}
+            className={hasBgColor ? 'bg-gray-01' : ''}
+          >
+            {content.map(
+              ({ id, field, heading, subheading, hasSwiper, images, associateWithPrev }, index) => {
+                const isLast = index === content.length - 1
+                const isFirstContent = firstContent?.id === id
+                const isLastContent = lastContent?.id === id
 
-          return (
-            <ContentContainer
-              key={id}
-              className={hasBgColor ? 'bg-gray-01' : ''}
-            >
-              <section
-                className={`${stylePaddingTop} ${stylePaddingBottom} ${styleDividerClass} flex flex-col gap-10`}
-              >
-                <div className='flex flex-col items-center gap-1'>
-                  <span dangerouslySetInnerHTML={{ __html: DOMPurify.sanitize(field) }}></span>
-                  <h4 className='text-h3 font-h3 lg:text-h1 lg:font-h1 mb-1'>{heading}</h4>
-                  <p className='text-h3 font-h3 lg:text-h2 lg:font-h2 text-gray-04'>{subheading}</p>
-                </div>
-                {!hasSwiper && (
-                  <div>
-                    {images.map(img => (
-                      <BlurLazyImage
-                        key={img.id}
-                        src={img.src}
-                        alt={img.alt}
-                        placeholder={img.placeholder}
-                        width={img.width}
-                        height={img.height}
-                      />
-                    ))}
-                  </div>
-                )}
-
-                {hasSwiper && <CustomSwiper images={images} />}
-              </section>
-            </ContentContainer>
-          )
-        }
-      )}
+                return (
+                  <DesignContent
+                    key={id}
+                    field={field}
+                    heading={heading}
+                    subheading={subheading}
+                    hasSwiper={hasSwiper}
+                    images={images}
+                    className={`${isLast ? 'py-10 lg:py-[144px]' : 'pt-10 lg:pt-[144px]'} ${associateWithPrev ? 'pt-6 lg:pt-10' : ''} ${isFirstContent ? 'bg-red' : ''} ${isLastContent ? 'with-divider' : ''}`}
+                  />
+                )
+              }
+            )}
+          </ContentContainer>
+        )
+      })}
     </div>
   )
 }
@@ -73,6 +74,12 @@ DesignImgContent.propTypes = {
 }
 
 const KolUiDesign = ({ title, descriptions, information }) => {
+  const firstContent = information[0]?.content[0]
+  const lastContent =
+    information[information.length - 1]?.content[
+      information[information.length - 1]?.content.length - 1
+    ]
+
   return (
     <>
       <BaseSectionGrid
@@ -83,8 +90,13 @@ const KolUiDesign = ({ title, descriptions, information }) => {
           />
         }
         hasDivider={false}
+        sectionClassName='pb-0'
       />
-      <DesignImgContent infos={information} />
+      <DesignImgContent
+        infos={information}
+        firstContent={firstContent}
+        lastContent={lastContent}
+      />
     </>
   )
 }

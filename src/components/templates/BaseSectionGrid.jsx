@@ -6,12 +6,13 @@ const BaseSectionGrid = ({
   mainContent,
   hasDivider = true,
   noPb = false,
+  sectionClassName = '',
   innerClassName = ''
 }) => {
   return (
     <ContentContainer>
       <section
-        className={`section-container ${hasDivider ? 'with-divider' : ''} ${noPb ? 'pb-0' : ''}`}
+        className={`section-container ${hasDivider ? 'with-divider' : ''} ${noPb ? 'pb-0' : ''} ${sectionClassName}`}
       >
         <div className={`section-container-inner ${innerClassName}`}>
           {topContent && <BaseSectionTop>{topContent}</BaseSectionTop>}
@@ -27,6 +28,7 @@ BaseSectionGrid.propTypes = {
   mainContent: PropTypes.node,
   hasDivider: PropTypes.bool,
   noPb: PropTypes.bool,
+  sectionClassName: PropTypes.string,
   innerClassName: PropTypes.string
 }
 
