@@ -31,7 +31,7 @@ export default function Footer() {
   }
 
   return (
-    <div className='relative'>
+    <div>
       {isShowContact && <ContactMe handleBgColor={handleBgColor} />}
       <footer
         className={`w-full flex flex-col md:flex-row justify-center md:justify-between items-center gap-4 px-[var(--main-content-padding-x--mobile)] lg:px-[var(--main-content-padding-x)] h-[var(--footer-height--mobile)] md:h-[var(--footer-height)] transition-colors duration-300`}
