@@ -1,18 +1,9 @@
 import { useLayoutEffect, useState, lazy } from 'react'
 import { useLocation } from 'react-router-dom'
 import SvgIcon from '@/components/ui/SvgIcon'
+import { AUTHOR, SOCIALS } from '@/data/designer-data'
 
 const ContactMe = lazy(() => import('@/components/ContactMe'))
-
-const AUTHOR = 'Lillian Lin'
-const SOCIALS = [
-  {
-    name: 'notion',
-    href: 'https://silly-twilight-9a0.notion.site/Lillian-Lin-2ae3d36181544482b9f78d64f0517d7c?pvs=4',
-    ariaLabel: 'Notion portfolio link'
-  },
-  { name: 'email', href: '', ariaLabel: 'email address' }
-]
 
 export default function Footer() {
   const [YEAR, setYEAR] = useState(0)
