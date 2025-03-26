@@ -42,7 +42,7 @@ const Project = () => {
         height={BANNER_SIZE.height}
       />
       <Button
-        className='hidden lg:flex static lg:sticky top-20 left-[var(--main-content-padding-x--mobile)] lg:left-[var(--main-content-padding-x)]'
+        className='btn-go-back'
         hasIcon={true}
         onClick={() => navigateByStep(-1)}
       >

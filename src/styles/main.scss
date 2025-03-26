@@ -98,6 +98,16 @@
   }
 }
 
+@layer components {
+  .btn-go-back {
+    @apply static lg:sticky top-20 left-[var(--main-content-padding-x--mobile)] lg:left-[var(--main-content-padding-x)];
+    
+    @media (max-width: 992px) {
+      display: none !important;
+    }
+  }
+}
+
 
 // 全域樣式
 html {
