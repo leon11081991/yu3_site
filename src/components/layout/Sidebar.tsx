@@ -1,8 +1,10 @@
 import React, { useRef } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion, AnimatePresence } from 'framer-motion'
+import SvgIcon from '@/components/ui/SvgIcon'
 import { useSidebar } from '@/shared/contexts/SidebarContext'
 import { useClickOutside } from '@/shared/hooks/useClickOutside'
+import { SOCIALS } from '@/data/designer-data'
 
 type LinkType = 'internal' | 'external'
 
@@ -41,7 +43,7 @@ const sidebarVariants = {
     width: '244px',
     height: 'var(--sidebar-height)',
     borderRadius: '10px',
-    padding: '100px 56px 40px 56px',
+    padding: '64px 56px 40px 56px',
     opacity: 1
   }
 }
@@ -111,6 +113,26 @@ const SidebarContent: React.FC<{
             </li>
           ))}
         </ul>
+
+        <ul className='flex justify-center gap-4'>
+          {SOCIALS.map(social => (
+            <li
+              key={social.name}
+              className='w-[var(--social-icon-width)] h-[var(--social-icon-width)] rounded-full border border-primary-02 border-opacity-10 transition hover:bg-primary-02 hover:bg-opacity-10 hover:border-transparent'
+            >
+              <a
+                className='flex items-center justify-center w-full h-full'
+                href={social.href || 'javascript:void(0);'}
+                aria-label={social.ariaLabel}
+                target='_blank'
+                rel='noreferrer noopener'
+              >
+                <SvgIcon iconName={social.name} />
+              </a>
+            </li>
+          ))}
+        </ul>
+
         <a
           href='mailto:lillian.lin33@gmail.com'
           className='text-p2 font-p2'
