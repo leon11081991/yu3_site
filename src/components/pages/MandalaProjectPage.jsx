@@ -41,13 +41,14 @@ const MandalaProjectPage = props => (
         <ContentHeader
           title={props.sitemap.title}
           descriptions={props.sitemap.descriptions}
+          className='lg:gap-4'
         >
           <SitemapIndicator indicators={props.sitemap.indicators} />
         </ContentHeader>
       }
       mainContent={
         <div>
-          <div className='w-full lg:w-[40.5%] mx-auto'>
+          <div className='w-[49.2%] lg:w-[40.5%] mx-auto'>
             {props.sitemap.images.map(img => (
               <BlurLazyImage
                 key={img.id}

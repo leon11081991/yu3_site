@@ -25,7 +25,7 @@ const ProjectCard = ({ name, title, category, cover, tagList }: CardProps) => {
           text: 'View',
           size: 100,
           color: 'rgba(0,0,0,0.3)',
-          fontWeight: 700
+          fontWeight: 500
         })
       }
       onMouseLeave={() => handleCursor('leave')}
