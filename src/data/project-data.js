@@ -159,7 +159,7 @@ export const PROJECT_DATA = {
         {
           id: 'waca-designProcess-Opt-2',
           isOptimized: true,
-          title: '現行產品',
+          title: '優化版本一',
           image: {
             src: '/images/waca/waca-designProcess-2.avif',
             alt: 'WACA 專案流程',
@@ -1675,7 +1675,13 @@ export const PROJECT_DATA = {
     },
     sitemap: {
       title: '網站架構 / Sitemap',
-      description: '根據業主需求，產出sitemap協助PM核對並預估開發時間。',
+      descriptions: [
+        {
+          id: 'mandala-sitemap-des-1',
+          label: null,
+          content: '根據業主需求，產出sitemap協助PM核對並預估開發時間。'
+        }
+      ],
       indicators: [
         {
           id: 1,
