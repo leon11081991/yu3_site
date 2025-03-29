@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import { motion, useSpring, useMotionValue } from 'framer-motion'
 import { useCursorContext } from '@/shared/contexts/CursorContext'
-import { useDevice } from '@/shared/hooks/useDevice'
+import useDevice from '@/shared/hooks/useDevice'
 
 const Cursor: React.FC = () => {
   const { isMobile } = useDevice()

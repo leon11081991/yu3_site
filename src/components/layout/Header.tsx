@@ -3,28 +3,33 @@ import { Link } from 'react-router-dom'
 import { useSidebar } from '@/shared/contexts/SidebarContext'
 import SvgIcon from '@/components/ui/SvgIcon'
 import useTemporaryHoverEffect from '@/shared/hooks/useTemporaryHoverEffect'
+import useDevice from '@/shared/hooks/useDevice'
 
 const Header: React.FC = () => {
   const { isOpen, setIsOpen } = useSidebar()
-  const { removeHoverEffect } = useTemporaryHoverEffect({ className: 'hover:bg-gray-02' })
+  const { isMobile } = useDevice()
+  const { removeHoverEffect } = useTemporaryHoverEffect({
+    className: 'hover:bg-gray-02',
+    delay: 100
+  })
 
   const handleHamburgerClick = (event: React.MouseEvent<HTMLDivElement>) => {
     event.stopPropagation()
     setIsOpen(prevState => !prevState)
-    removeHoverEffect(event.currentTarget as HTMLElement)
+    if (isMobile) {
+      removeHoverEffect(event.currentTarget as HTMLElement)
+    }
   }
 
   return (
     <header className='sticky top-0 px-[var(--main-content-padding-x--mobile)] lg:px-[var(--main-content-padding-x)] flex justify-between items-center h-[var(--header-height)] z-50'>
       <div>
-        {/* <h1 className='text-logo tracking-logo font-semibold'> */}
         <Link to='/'>
           <SvgIcon
             iconName='logo'
             size={{ width: '44px', height: '14px' }}
           />
         </Link>
-        {/* </h1> */}
       </div>
 
       <div
