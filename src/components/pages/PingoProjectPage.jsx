@@ -119,7 +119,7 @@ const PingoProjectPage = props => {
           </ContentHeader>
         }
         mainContent={
-          <div className='w-full lg:w-[44.2%] mx-auto'>
+          <div className='w-[60%] lg:w-[44.2%] mx-auto'>
             {props.sitemap.images.map(img => (
               <BlurLazyImage
                 key={img.id}
