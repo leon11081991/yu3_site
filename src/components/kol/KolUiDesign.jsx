@@ -4,7 +4,7 @@ import BaseSectionGrid from '@/components/templates/BaseSectionGrid'
 import ContentContainer from '@/layouts/ContentContainer'
 import ContentHeader from '@/components/molecules/ContentHeader'
 import BlurLazyImage from '@/components/ui/image/BlurLazyImage'
-import CustomSwiper from '@/components/CustomSwiper'
+import { ImageSlider } from '@/components/ImageSlider'
 
 const DesignContent = ({ field, heading, subheading, hasSwiper, images, className }) => {
   return (
@@ -29,7 +29,7 @@ const DesignContent = ({ field, heading, subheading, hasSwiper, images, classNam
         </div>
       )}
 
-      {hasSwiper && <CustomSwiper images={images} />}
+      {hasSwiper && <ImageSlider images={images} />}
     </section>
   )
 }
