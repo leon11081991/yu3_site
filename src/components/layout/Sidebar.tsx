@@ -5,6 +5,7 @@ import SvgIcon from '@/components/ui/SvgIcon'
 import { useSidebar } from '@/shared/contexts/SidebarContext'
 import { useClickOutside } from '@/shared/hooks/useClickOutside'
 import { SOCIALS } from '@/data/designer-data'
+import useScreenSize from '@/shared/hooks/useScreenSize'
 
 type LinkType = 'internal' | 'external'
 
@@ -25,28 +26,6 @@ const MENU_ITEMS: { label: string; href: string; type: LinkType }[] = [
     type: 'external'
   }
 ]
-
-// 抽取動畫變體到單獨的對象
-const sidebarVariants = {
-  closed: {
-    top: '12px',
-    right: '44px',
-    width: '50px',
-    height: '50px',
-    borderRadius: '50%',
-    padding: '0px',
-    opacity: 0
-  },
-  open: {
-    top: '12px',
-    right: '34px',
-    width: '244px',
-    height: 'var(--sidebar-height)',
-    borderRadius: '10px',
-    padding: '64px 56px 40px 56px',
-    opacity: 1
-  }
-}
 
 // 內容的動畫變體
 const contentVariants = {
@@ -147,7 +126,29 @@ const SidebarContent: React.FC<{
 const Sidebar = () => {
   const { isOpen, setIsOpen } = useSidebar()
   const sidebarRef = useRef<HTMLElement>(null)
+  const screenSize = useScreenSize()
   useClickOutside(sidebarRef as React.RefObject<HTMLElement>, () => setIsOpen(false))
+
+  const sidebarVariants = {
+    closed: {
+      top: '12px',
+      right: '44px',
+      width: '50px',
+      height: '50px',
+      borderRadius: '50%',
+      padding: '0px',
+      opacity: 0
+    },
+    open: {
+      top: '12px',
+      right: screenSize === 'lg' ? '34px' : '24px',
+      width: '244px',
+      height: 'var(--sidebar-height)',
+      borderRadius: '10px',
+      padding: '64px 56px 40px 56px',
+      opacity: 1
+    }
+  }
 
   return (
     <motion.aside

@@ -33,7 +33,7 @@ const Header: React.FC = () => {
       </div>
 
       <div
-        className='w-[var(--hamburger-width)] h-[var(--hamburger-height)] rounded-full cursor-pointer flex items-center justify-center transition-all hover:bg-gray-02 z-50'
+        className={`w-[var(--hamburger-width)] h-[var(--hamburger-height)] rounded-full cursor-pointer flex items-center justify-center transition-all z-50 ${isOpen ? '' : 'hover:bg-gray-02'}`}
         onClick={handleHamburgerClick}
       >
         <div className='relative p-2 w-8 h-8'>

@@ -1,8 +1,8 @@
-import { useState } from 'react'
 import ContentContainer from '@/layouts/ContentContainer'
 import ProjectCard from '@/components/ui/card/ProjectCard'
 import TabFilter from '@/components/ui/TabFilter'
 import HeroSection from '@/features/home/HeroSection'
+import { useTabFilter } from '@/shared/hooks/useTabFilter'
 import { useScrollToSectionContext } from '@/shared/contexts/ScrollToSectionContext'
 import { PROJECT_BRIEF_LIST } from '@/data/project-brief-data'
 
@@ -13,14 +13,12 @@ const TypeFilter = [
   { type: 'web', label: '網頁' }
 ]
 
-const Home = () => {
-  const [activeTab, setActiveTab] = useState('all')
+export default function Home() {
+  const { activeTab, setActiveTab, filteredData } = useTabFilter({
+    defaultTab: 'all',
+    data: PROJECT_BRIEF_LIST
+  })
   const { registerSection } = useScrollToSectionContext()
-
-  const filteredProjects =
-    activeTab === 'all'
-      ? PROJECT_BRIEF_LIST // 顯示全部
-      : PROJECT_BRIEF_LIST.filter(project => project.type === activeTab)
 
   return (
     <>
@@ -37,7 +35,7 @@ const Home = () => {
           />
 
           <ul className='grid grid-cols-1 lg:grid-cols-2 gap-y-10 lg:gap-y-16 gap-x-14'>
-            {filteredProjects.map(project => (
+            {filteredData.map(project => (
               <ProjectCard
                 key={project.id}
                 {...project}
@@ -49,5 +47,3 @@ const Home = () => {
     </>
   )
 }
-
-export default Home
