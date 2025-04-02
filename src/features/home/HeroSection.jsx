@@ -14,14 +14,14 @@ const HeroSectionFooter = () => {
         className='justify-center'
         tagList={designerTag}
       />
+
       <div
-        className='hover:bg-gray-02 rounded-full transition-all cursor-pointer'
+        className='w-[50px] h-[50px] rounded-full border border-white/20 flex items-center justify-center cursor-pointer hover:bg-gray-02'
         onClick={() => scrollToSection('project-list')}
       >
-        <SvgIcon
-          iconName='arrow'
-          size={{ width: 50, height: 50 }}
-        />
+        <div className='animate-bounce'>
+          <SvgIcon iconName='arrowDown' />
+        </div>
       </div>
     </div>
   )
