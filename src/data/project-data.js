@@ -594,8 +594,8 @@ export const PROJECT_DATA = {
           src: '/images/kol/kol-wireframe.avif',
           alt: 'Kol 行銷wireframe圖',
           placeholder: '/images/kol/kol-wireframe.avif',
-          width: 566,
-          height: 588.45
+          width: 565,
+          height: 588
         }
       ]
     },
