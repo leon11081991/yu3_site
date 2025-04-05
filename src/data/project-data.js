@@ -148,25 +148,50 @@ export const PROJECT_DATA = {
           id: 'waca-designProcess-Opt-1',
           isOptimized: false,
           title: '現行產品',
+          displayType: 'video',
           image: {
-            src: '/images/waca/waca-designProcess-1.avif',
-            alt: 'WACA 專案流程',
-            placeholder: '/images/waca/waca-designProcess-1.avif',
-            width: 1042,
-            height: 357
-          }
+            src: '/videos/waca-designProcess-1.mp4',
+            alt: 'WACA 現行產品',
+            placeholder: '/videos/waca-designProcess-1.mp4',
+            width: 374,
+            height: 311
+          },
+          contentList: [
+            {
+              id: 'waca-designProcess-Opt-1-content-1',
+              content: '點擊「新增多規格」建立規格。'
+            },
+            {
+              id: 'waca-designProcess-Opt-1-content-2',
+              content: '輸入規格欄位資訊。'
+            },
+            {
+              id: 'waca-designProcess-Opt-1-content-3',
+              content: '打開「雙層規格」開關，即可啟用規格二。'
+            },
+            {
+              id: 'waca-designProcess-Opt-1-content-4',
+              content: '輸入規格二欄位資訊，例如：Ｓ、Ｍ、Ｌ'
+            },
+            {
+              id: 'waca-designProcess-Opt-1-content-5',
+              content: '點擊「新增多規格」新增空白的欄位。'
+            }
+          ]
         },
         {
           id: 'waca-designProcess-Opt-2',
           isOptimized: true,
           title: '優化版本一',
+          displayType: 'image',
           image: {
             src: '/images/waca/waca-designProcess-2.avif',
             alt: 'WACA 專案流程',
             placeholder: '/images/waca/waca-designProcess-2.avif',
             width: 1042,
             height: 357
-          }
+          },
+          contentList: null
         }
       ]
     },
