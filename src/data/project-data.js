@@ -374,7 +374,7 @@ export const PROJECT_DATA = {
       descriptions: [
         {
           id: 'kol-analysis-des-1',
-          label: '競品選擇',
+          label: '競品分析&關鍵洞察',
           content:
             '以當前市佔率較高的產品進行分析，分別為「KOL Radar」、「Influencer圈圈科技」、「台灣KOL」，了解各項產品的優劣勢並制定產品策略以便能夠充分利用機會切入和改善劣勢。<span class="text-gray-04">(以2020年當時研究數據為主)</span>'
         }
@@ -430,7 +430,7 @@ export const PROJECT_DATA = {
           id: 'kol-interview-des-1',
           label: '訪談目的',
           content:
-            '針對廣告主進行一對一訪談，以全面<span class="text-secondary-04">了解廣告主選擇KOL時遇到的痛點。</span>這些洞察將成為我們構思產品設計和制定策略時的重要參考，確保平台功能與服務能切實滿足目標用戶的需求。'
+            '透過用戶訪談驗證這些需求是真實存在的，且目前市場上的主流競品尚未提供完善的解決方案。'
         }
       ],
       interviewList: [
@@ -488,21 +488,21 @@ export const PROJECT_DATA = {
       ]
     },
     insight: {
-      title: '設計洞察 / Insight',
+      title: '研究洞察 / Insight',
       descriptions: [
         {
           id: 'kol-insight-des-1',
           label: '市場機會',
           content:
-            '透過競品分析與用戶訪談的交叉驗證，我們發現市場與使用者需求之間的落差主要集中在<span class="text-secondary-04">「功能整合性不足、數據體驗不佳、溝通不順暢」</span>。這些問題顯示，現有平台尚未能真正解決品牌方在KOL行銷中的核心需求。因此，我們的產品策略將聚焦於打造<span class="text-secondary-04">「一站式KOL行銷平台」</span>，提供更高效、直覺的使用體驗，並透過以下三大核心方向來提升市場競爭力：'
+            '透過競品分析與用戶訪談的交叉驗證，針對這些未被滿足的需求，<span class="text-secondary-04">我們確認它們具備市場潛力，並有機會創造產品價值。</span>我們的產品將專注於解決這些需求，並以此作為主要競爭力。'
         }
       ],
       image: {
         src: '/images/kol/kol-insight.avif',
         alt: 'Pingo 美食搜集神器架構',
         placeholder: '/images/kol/kol-insight.avif',
-        width: 995,
-        height: 403
+        width: 1122,
+        height: 286.34
       }
     },
     sitemap: {

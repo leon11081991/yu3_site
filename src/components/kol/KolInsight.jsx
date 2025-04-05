@@ -5,7 +5,7 @@ import BlurLazyImage from '@/components/ui/image/BlurLazyImage'
 
 const InsightContent = ({ img }) => {
   return (
-    <div className='w-[88.6%] mx-auto'>
+    <div className='w-full mx-auto'>
       <BlurLazyImage
         src={img.src}
         alt={`${img.alt} Banner`}
