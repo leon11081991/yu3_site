@@ -242,13 +242,15 @@ export const PROJECT_DATA = {
           id: 'waca-solution-Opt-1',
           isOptimized: true,
           title: '優化版本二',
+          displayType: 'image',
           image: {
             src: '/images/waca/waca-designProcess-3.avif',
             alt: 'WACA 專案流程',
             placeholder: '/images/waca/waca-designProcess-3.avif',
             width: 796,
             height: 317
-          }
+          },
+          contentList: null
         }
       ]
     },
@@ -267,13 +269,15 @@ export const PROJECT_DATA = {
           id: 'waca-solution-Opt-1',
           isOptimized: true,
           title: '最終版',
+          displayType: 'image',
           image: {
             src: '/images/waca/waca-designProcess-4.avif',
             alt: 'WACA 專案流程',
             placeholder: '/images/waca/waca-designProcess-4.avif',
             width: 1042,
             height: 357
-          }
+          },
+          contentList: null
         }
       ]
     },
@@ -595,7 +599,7 @@ export const PROJECT_DATA = {
           alt: 'Kol 行銷wireframe圖',
           placeholder: '/images/kol/kol-wireframe.avif',
           width: 565,
-          height: 588
+          height: 588.45
         }
       ]
     },
