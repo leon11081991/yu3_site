@@ -714,9 +714,9 @@ export const PROJECT_DATA = {
               images: [
                 {
                   id: 'uiDesign-img-1',
-                  src: '/video/kol/kol-design-1.webm',
+                  src: '/videos/kol/kol-design-1.webm',
                   alt: 'Kol產品首頁精稿圖',
-                  placeholder: '/video/kol/kol-design-1.webm',
+                  placeholder: '/videos/kol/kol-design-1.webm',
                   width: 700,
                   height: 410
                 }
@@ -734,9 +734,9 @@ export const PROJECT_DATA = {
               images: [
                 {
                   id: 'uiDesign-img-2',
-                  src: '/video/kol/kol-design-2.webm',
+                  src: '/videos/kol/kol-design-2.webm',
                   alt: 'Kol網紅搜尋精稿圖',
-                  placeholder: '/video/kol/kol-design-2.webm',
+                  placeholder: '/videos/kol/kol-design-2.webm',
                   width: 700,
                   height: 410
                 }
@@ -783,7 +783,7 @@ export const PROJECT_DATA = {
               ]
             },
             {
-              id: 'kol-uiDesign-info-content-3',
+              id: 'kol-uiDesign-info-content-4',
               field: '<span class="text-secondary-04">Create</span>',
               heading: '建立專案',
               subheading: '步驟式流程表單，降低認知負擔',
