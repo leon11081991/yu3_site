@@ -11,7 +11,7 @@ const DesignContent = ({
   heading,
   subheading,
   hasSwiper,
-  displayType,
+  // displayType,
   images,
   className
 }) => {
@@ -23,7 +23,7 @@ const DesignContent = ({
         <p className='text-h3 font-h3 lg:text-h2 lg:font-h2 text-gray-04'>{subheading}</p>
       </div>
 
-      {displayType === 'image' && !hasSwiper && (
+      {!hasSwiper && (
         <div>
           {images.map(img => (
             <BlurLazyImage
@@ -38,7 +38,22 @@ const DesignContent = ({
         </div>
       )}
 
-      {displayType === 'video' && (
+      {/* {displayType === 'image' && !hasSwiper && (
+        <div>
+          {images.map(img => (
+            <BlurLazyImage
+              key={img.id}
+              src={img.src}
+              alt={img.alt}
+              placeholder={img.placeholder}
+              width={img.width}
+              height={img.height}
+            />
+          ))}
+        </div>
+      )} */}
+
+      {/* {displayType === 'video' && (
         <div className='mx-auto'>
           {images.map(img => (
             <video
@@ -59,7 +74,7 @@ const DesignContent = ({
             </video>
           ))}
         </div>
-      )}
+      )} */}
 
       {hasSwiper && <ImageSlider images={images} />}
     </section>
@@ -83,7 +98,7 @@ const DesignImgContent = ({ infos, firstContent, lastContent }) => {
                   heading,
                   subheading,
                   hasSwiper,
-                  displayType,
+                  // displayType,
                   images,
                   associateWithPrev
                 },
@@ -100,7 +115,7 @@ const DesignImgContent = ({ infos, firstContent, lastContent }) => {
                     heading={heading}
                     subheading={subheading}
                     hasSwiper={hasSwiper}
-                    displayType={displayType}
+                    // displayType={displayType}
                     images={images}
                     className={`${isLast ? 'py-10 lg:py-[144px]' : 'pt-10 lg:pt-[144px]'} ${associateWithPrev ? 'pt-6 lg:pt-10' : ''} ${isFirstContent ? 'bg-red' : ''} ${isLastContent ? 'with-divider' : ''}`}
                   />
