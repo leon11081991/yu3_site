@@ -717,7 +717,7 @@ export const PROJECT_DATA = {
                   src: '/videos/kol/kol-design-1.webm',
                   alt: 'Kol產品首頁精稿圖',
                   placeholder: '/videos/kol/kol-design-1.webm',
-                  width: 700,
+                  width: 750,
                   height: 410
                 }
               ]
@@ -737,7 +737,7 @@ export const PROJECT_DATA = {
                   src: '/videos/kol/kol-design-2.webm',
                   alt: 'Kol網紅搜尋精稿圖',
                   placeholder: '/videos/kol/kol-design-2.webm',
-                  width: 700,
+                  width: 750,
                   height: 410
                 }
               ]
@@ -1602,25 +1602,25 @@ export const PROJECT_DATA = {
     demo: {
       pictures: [
         {
-          src: '/images/kai/kai-demo1.svg',
+          src: '/images/kai/kai-demo1.avif',
           alt: '凱奧網站展示',
-          placeholder: '/images/kai/kai-demo1.svg',
+          placeholder: '/images/kai/kai-demo1.avif',
           width: 1440,
           height: 1199,
           isFullSize: true
         },
         {
-          src: '/images/kai/kai-demo2.svg',
+          src: '/images/kai/kai-demo2.avif',
           alt: '凱奧網站展示',
-          placeholder: '/images/kai/kai-demo2.svg',
+          placeholder: '/images/kai/kai-demo2.avif',
           width: 800,
           height: 500,
           isFullSize: false
         },
         {
-          src: '/images/kai/kai-demo3.svg',
+          src: '/images/kai/kai-demo3.avif',
           alt: '凱奧網站展示',
-          placeholder: '/images/kai/kai-demo3.svg',
+          placeholder: '/images/kai/kai-demo3.avif',
           width: 1440,
           height: 1408,
           isFullSize: true
@@ -1751,9 +1751,9 @@ export const PROJECT_DATA = {
       ],
       images: [
         {
-          src: '/images/mandala/mandala-sitemap.svg',
+          src: '/images/mandala/mandala-sitemap.avif',
           alt: '炘睿網站架構',
-          placeholder: '/images/mandala/mandala-sitemap.svg',
+          placeholder: '/images/mandala/mandala-sitemap.avif',
           width: 456,
           height: 369
         }
@@ -1767,9 +1767,9 @@ export const PROJECT_DATA = {
       images: [
         {
           id: 1,
-          src: '/images/mandala/mandala-demo-1.jpg',
+          src: '/images/mandala/mandala-demo-1.avif',
           alt: '',
-          placeholder: '/images/mandala/mandala-demo-1.jpg',
+          placeholder: '/images/mandala/mandala-demo-1.avif',
           width: 895,
           height: 1466,
           other: {
@@ -1793,9 +1793,9 @@ export const PROJECT_DATA = {
         },
         {
           id: 3,
-          src: '/images/mandala/mandala-demo-3.png',
+          src: '/images/mandala/mandala-demo-3.avif',
           alt: '',
-          placeholder: '/images/mandala/mandala-demo-3.png',
+          placeholder: '/images/mandala/mandala-demo-3.avif',
           width: 894,
           height: 559,
           other: {
@@ -1806,9 +1806,9 @@ export const PROJECT_DATA = {
         },
         {
           id: 4,
-          src: '/images/mandala/mandala-demo-4.png',
+          src: '/images/mandala/mandala-demo-4.avif',
           alt: '',
-          placeholder: '/images/mandala/mandala-demo-4.png',
+          placeholder: '/images/mandala/mandala-demo-4.avif',
           width: 894,
           height: 1491,
           other: {
