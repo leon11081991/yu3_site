@@ -1,18 +1,5 @@
 export const PROJECT_BRIEF_LIST = [
   {
-    id: 1,
-    name: 'pingo',
-    title: 'Pingo 美食搜集神器（Redesign）',
-    category: '使用者研究、流程優化、易用性測試、介面設計',
-    tagList: ['APP', 'UI/UX'],
-    type: 'app',
-    cover: {
-      src: '/images/pingo/pingo-cover-full.avif',
-      alt: 'Pingo 美食搜集神器',
-      placeholderImg: '/images/pingo/pingo-small.avif'
-    }
-  },
-  {
     id: 2,
     name: 'waca',
     title: 'WACA - 商品多規格設定',
@@ -36,6 +23,19 @@ export const PROJECT_BRIEF_LIST = [
       src: '/images/kol/kol-cover-full.avif',
       alt: 'KOL Master 網紅媒合平台',
       placeholderImg: '/images/kol/kol-small.avif'
+    }
+  },
+  {
+    id: 1,
+    name: 'pingo',
+    title: 'Pingo 美食搜集神器（Redesign）',
+    category: '使用者研究、流程優化、易用性測試、介面設計',
+    tagList: ['APP', 'UI/UX'],
+    type: 'app',
+    cover: {
+      src: '/images/pingo/pingo-cover-full.avif',
+      alt: 'Pingo 美食搜集神器',
+      placeholderImg: '/images/pingo/pingo-small.avif'
     }
   },
   {
