@@ -710,15 +710,15 @@ export const PROJECT_DATA = {
               hasSwiper: false,
               associateWithNext: false,
               associateWithPrev: false,
-              displayType: 'video',
+              // displayType: 'video',
               images: [
                 {
                   id: 'uiDesign-img-1',
-                  src: '/videos/kol/kol-design-1.webm',
+                  src: '/images/kol/kol-design-1.avif',
                   alt: 'Kol產品首頁精稿圖',
-                  placeholder: '/videos/kol/kol-design-1.webm',
-                  width: 750,
-                  height: 410
+                  placeholder: '/images/kol/kol-design-1.avif',
+                  width: 1048,
+                  height: 442
                 }
               ]
             },
@@ -730,14 +730,14 @@ export const PROJECT_DATA = {
               hasSwiper: false,
               associateWithNext: false,
               associateWithPrev: false,
-              displayType: 'video',
+              // displayType: 'video',
               images: [
                 {
                   id: 'uiDesign-img-2',
-                  src: '/videos/kol/kol-design-2.webm',
+                  src: '/images/kol/kol-design-2.avif',
                   alt: 'Kol網紅搜尋精稿圖',
-                  placeholder: '/videos/kol/kol-design-2.webm',
-                  width: 750,
+                  placeholder: '/images/kol/kol-design-2.avif',
+                  width: 988,
                   height: 410
                 }
               ]
@@ -750,7 +750,7 @@ export const PROJECT_DATA = {
               hasSwiper: false,
               associateWithNext: false,
               associateWithPrev: false,
-              displayType: 'image',
+              // displayType: 'image',
               images: [
                 {
                   id: 'uiDesign-img-3',
@@ -770,7 +770,7 @@ export const PROJECT_DATA = {
               hasSwiper: false,
               associateWithNext: true,
               associateWithPrev: false,
-              displayType: 'image',
+              // displayType: 'image',
               images: [
                 {
                   id: 'uiDesign-img-4',
@@ -790,7 +790,7 @@ export const PROJECT_DATA = {
               hasSwiper: true,
               associateWithNext: false,
               associateWithPrev: true,
-              displayType: 'image',
+              // displayType: 'image',
               images: [
                 {
                   id: 'uiDesign-img-5',
@@ -832,7 +832,7 @@ export const PROJECT_DATA = {
               hasSwiper: false,
               associateWithNext: false,
               associateWithPrev: false,
-              displayType: 'image',
+              // displayType: 'image',
               images: [
                 {
                   id: 'kol-uiDesign-img-8',
@@ -852,7 +852,7 @@ export const PROJECT_DATA = {
               hasSwiper: false,
               associateWithNext: false,
               associateWithPrev: false,
-              displayType: 'image',
+              // displayType: 'image',
               images: [
                 {
                   id: 'uiDesign-img-9',
@@ -878,7 +878,7 @@ export const PROJECT_DATA = {
               hasSwiper: false,
               associateWithNext: true,
               associateWithPrev: false,
-              displayType: 'image',
+              // displayType: 'image',
               images: [
                 {
                   id: 'kol-uiDesign-img-10',
@@ -898,7 +898,7 @@ export const PROJECT_DATA = {
               hasSwiper: false,
               associateWithNext: false,
               associateWithPrev: true,
-              displayType: 'image',
+              // displayType: 'image',
               images: [
                 {
                   id: 'kol-uiDesign-img-11',
