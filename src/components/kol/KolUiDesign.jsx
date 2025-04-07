@@ -6,7 +6,15 @@ import ContentHeader from '@/components/molecules/ContentHeader'
 import BlurLazyImage from '@/components/ui/image/BlurLazyImage'
 import { ImageSlider } from '@/components/ImageSlider'
 
-const DesignContent = ({ field, heading, subheading, hasSwiper, images, className }) => {
+const DesignContent = ({
+  field,
+  heading,
+  subheading,
+  hasSwiper,
+  displayType,
+  images,
+  className
+}) => {
   return (
     <section className={`flex flex-col gap-6 lg:gap-10 ${className}`}>
       <div className='flex flex-col items-center gap-1'>
@@ -14,7 +22,8 @@ const DesignContent = ({ field, heading, subheading, hasSwiper, images, classNam
         <h4 className='text-h3 font-h3 lg:text-h1 lg:font-h1 mb-1'>{heading}</h4>
         <p className='text-h3 font-h3 lg:text-h2 lg:font-h2 text-gray-04'>{subheading}</p>
       </div>
-      {!hasSwiper && (
+
+      {displayType === 'image' && !hasSwiper && (
         <div>
           {images.map(img => (
             <BlurLazyImage
@@ -25,6 +34,29 @@ const DesignContent = ({ field, heading, subheading, hasSwiper, images, classNam
               width={img.width}
               height={img.height}
             />
+          ))}
+        </div>
+      )}
+
+      {displayType === 'video' && (
+        <div className='mx-auto'>
+          {images.map(img => (
+            <video
+              key={img.id}
+              width={img.width}
+              height={img.height}
+              autoPlay
+              loop
+              muted
+              playsInline
+              className=''
+            >
+              <source
+                src={img.src}
+                type='video/webm'
+              />
+              <p>您的瀏覽器不支援 HTML5 的影片播放。</p>
+            </video>
           ))}
         </div>
       )}
@@ -44,7 +76,19 @@ const DesignImgContent = ({ infos, firstContent, lastContent }) => {
             className={hasBgColor ? 'bg-gray-01' : ''}
           >
             {content.map(
-              ({ id, field, heading, subheading, hasSwiper, images, associateWithPrev }, index) => {
+              (
+                {
+                  id,
+                  field,
+                  heading,
+                  subheading,
+                  hasSwiper,
+                  displayType,
+                  images,
+                  associateWithPrev
+                },
+                index
+              ) => {
                 const isLast = index === content.length - 1
                 const isFirstContent = firstContent?.id === id
                 const isLastContent = lastContent?.id === id
@@ -56,6 +100,7 @@ const DesignImgContent = ({ infos, firstContent, lastContent }) => {
                     heading={heading}
                     subheading={subheading}
                     hasSwiper={hasSwiper}
+                    displayType={displayType}
                     images={images}
                     className={`${isLast ? 'py-10 lg:py-[144px]' : 'pt-10 lg:pt-[144px]'} ${associateWithPrev ? 'pt-6 lg:pt-10' : ''} ${isFirstContent ? 'bg-red' : ''} ${isLastContent ? 'with-divider' : ''}`}
                   />

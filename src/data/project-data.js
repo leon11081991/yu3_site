@@ -710,12 +710,13 @@ export const PROJECT_DATA = {
               hasSwiper: false,
               associateWithNext: false,
               associateWithPrev: false,
+              displayType: 'video',
               images: [
                 {
                   id: 'uiDesign-img-1',
-                  src: '/images/kol/kol-design-1.gif',
+                  src: '/video/kol/kol-design-1.webm',
                   alt: 'Kol產品首頁精稿圖',
-                  placeholder: '/images/kol/kol-design-1.gif',
+                  placeholder: '/video/kol/kol-design-1.webm',
                   width: 700,
                   height: 410
                 }
@@ -729,12 +730,13 @@ export const PROJECT_DATA = {
               hasSwiper: false,
               associateWithNext: false,
               associateWithPrev: false,
+              displayType: 'video',
               images: [
                 {
                   id: 'uiDesign-img-2',
-                  src: '/images/kol/kol-design-2.gif',
+                  src: '/video/kol/kol-design-2.webm',
                   alt: 'Kol網紅搜尋精稿圖',
-                  placeholder: '/images/kol/kol-design-2.gif',
+                  placeholder: '/video/kol/kol-design-2.webm',
                   width: 700,
                   height: 410
                 }
@@ -748,6 +750,7 @@ export const PROJECT_DATA = {
               hasSwiper: false,
               associateWithNext: false,
               associateWithPrev: false,
+              displayType: 'image',
               images: [
                 {
                   id: 'uiDesign-img-3',
@@ -767,6 +770,7 @@ export const PROJECT_DATA = {
               hasSwiper: false,
               associateWithNext: true,
               associateWithPrev: false,
+              displayType: 'image',
               images: [
                 {
                   id: 'uiDesign-img-4',
@@ -786,6 +790,7 @@ export const PROJECT_DATA = {
               hasSwiper: true,
               associateWithNext: false,
               associateWithPrev: true,
+              displayType: 'image',
               images: [
                 {
                   id: 'uiDesign-img-5',
@@ -827,6 +832,7 @@ export const PROJECT_DATA = {
               hasSwiper: false,
               associateWithNext: false,
               associateWithPrev: false,
+              displayType: 'image',
               images: [
                 {
                   id: 'kol-uiDesign-img-8',
@@ -846,6 +852,7 @@ export const PROJECT_DATA = {
               hasSwiper: false,
               associateWithNext: false,
               associateWithPrev: false,
+              displayType: 'image',
               images: [
                 {
                   id: 'uiDesign-img-9',
@@ -871,6 +878,7 @@ export const PROJECT_DATA = {
               hasSwiper: false,
               associateWithNext: true,
               associateWithPrev: false,
+              displayType: 'image',
               images: [
                 {
                   id: 'kol-uiDesign-img-10',
@@ -890,6 +898,7 @@ export const PROJECT_DATA = {
               hasSwiper: false,
               associateWithNext: false,
               associateWithPrev: true,
+              displayType: 'image',
               images: [
                 {
                   id: 'kol-uiDesign-img-11',
