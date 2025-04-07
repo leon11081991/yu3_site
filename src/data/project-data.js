@@ -694,7 +694,7 @@ export const PROJECT_DATA = {
           id: 'kol-uiDesign-des-1',
           label: '規劃目的',
           content:
-            '為確保介面在美感與操作便利性之間取得最佳平衡，我們製作了Prototype，透過內部團隊的實測與回饋進行多次迭代優化。以下即為根據測試結果調整後的最終成果。'
+            '為確保介面在美感與操作便利性之間取得最佳平衡，我們製作了Prototype，透過內部團隊的實測與回饋進行多次迭代優化。標示有<span class="text-secondary-04">「測試優化」</span>的區塊，即為根據測試結果調整後的最終成果。'
         }
       ],
       information: [
@@ -706,7 +706,7 @@ export const PROJECT_DATA = {
               id: 'kol-uiDesign-info-content-1',
               field: '<span class="text-secondary-04">Home</span>',
               heading: '產品首頁',
-              subheading: '介紹產品的功能、特色、聯繫方式，與清晰的登入/註冊動線',
+              subheading: '初次來到產品首頁，有清晰的用戶引導',
               hasSwiper: false,
               associateWithNext: false,
               associateWithPrev: false,
@@ -726,7 +726,7 @@ export const PROJECT_DATA = {
               id: 'kol-uiDesign-info-content-2',
               field: '<span class="text-secondary-04">Search</span>',
               heading: '網紅搜尋',
-              subheading: '透過關鍵字搜尋、條件篩選，輕鬆查找匹配的合作對象',
+              subheading: '直觀的搜尋欄，輕鬆查找匹配網紅',
               hasSwiper: false,
               associateWithNext: false,
               associateWithPrev: false,
